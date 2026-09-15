@@ -8,7 +8,7 @@ library(patchwork)
 library(tidyverse)
 
 # cargar bbdd
-datos <- read_excel("input/data-orig/igvust.xlsx")
+datos <- read_excel("../input/data-orig/igvust.xlsx")
 
 # limpiar nombres de región (arregla duplicados como VALPARAISO / VALPARAÍSO)
 datos <- datos %>%
@@ -80,6 +80,19 @@ grafico_mapa_nacional
 mapa_vulnerabilidad
 
 # mapas regionales 
+# obtener mapa de comunas con los datos de vulnerabilidad
+mapa_comunal <- chilemapas::mapa_comunas %>%
+  st_as_sf() %>%
+  left_join(
+    datos %>% 
+      st_drop_geometry() %>%
+      mutate(cod_com = sprintf("%05d", cod_com)),
+    by = c("codigo_comuna" = "cod_com")
+  )
+
+# las 3 regiones más vulnerables
+top3_regiones <- regiones_vulnerabilidad$Region[1:3]
+
 # graficar mapas de las 3 regiones más vulnerables
 graficar_region <- function(nombre_region) {
 
@@ -117,12 +130,28 @@ mapa_1 <- graficar_region(top3_regiones[1])
 mapa_2 <- graficar_region(top3_regiones[2])
 mapa_3 <- graficar_region(top3_regiones[3])
 
+# compilar mapas en una lista
+mapas_top3 <- list(mapa_1, mapa_2, mapa_3)
+
 mapa_1
 mapa_2
 mapa_3
 
 # guardar mapas
+dir.create("output/graphs", showWarnings = FALSE, recursive = TRUE)
+
 ggsave("output/graphs/mapa_nacional.png", grafico_mapa_nacional, width = 6, height = 8, dpi = 300, bg = "white")
 ggsave("output/graphs/mapa_region_1.png", mapa_1, width = 6, height = 8, dpi = 300, bg = "white")
 ggsave("output/graphs/mapa_region_2.png", mapa_2, width = 6, height = 8, dpi = 300, bg = "white")
 ggsave("output/graphs/mapa_region_3.png", mapa_3, width = 6, height = 8, dpi = 300, bg = "white")
+
+
+
+# revisar la relación entre las columnas que arman la cobertura
+datos %>%
+  filter(p_cobertura_com > 100) %>%
+  select(Comuna, Region, pob_rsh_com, hog_com, p_cobertura_com) %>%
+  arrange(desc(p_cobertura_com))
+
+# cuántas comunas en total superan el 100%
+sum(datos$p_cobertura_com > 100, na.rm = TRUE)

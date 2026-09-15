@@ -4,6 +4,10 @@ project:
 manuscript:
   article: index.qmd
 
+execute:
+  freeze: true
+  working-directory: ../
+
 format:
   html:
     comments:
@@ -13,9 +17,6 @@ format:
 
   # (other formats)
   # pdf: default
-
-execute:
-  freeze: true
 
 
 
