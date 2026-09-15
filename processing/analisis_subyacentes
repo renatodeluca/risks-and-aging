@@ -1,0 +1,10 @@
+library(dplyr)
+library(tidyverse)
+library(readxl)
+
+suby <- read_excel("input/data-orig/fac_suby.xlsx")
+options(scipen = 999)
+
+na.omit(suby$IDH)
+
+mean(suby$IDH)
