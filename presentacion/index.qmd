@@ -1,0 +1,268 @@
+---
+title: "Vulnerabilidad Socioterritorial en Chile"
+subtitle: "Análisis del Índice de Geografía de la Vulnerabilidad Urbana y Social Territorial (IGVUST) y de datos del CENSO 2024"
+authors:
+  - name: Renato De Luca
+    affiliation: Universidad de Chile
+    roles: writing
+    corresponding: true
+date: today
+bibliography: references.bib
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: cyborg
+    toc: true
+    toc-depth: 2
+    toc-location: left
+    number-sections: true
+    smooth-scroll: true
+    code-fold: true
+    code-summary: "Ver código"
+    fig-cap-location: bottom
+    title-block-banner: true
+    title-block-banner-color: "#6e4416"
+---
+
+```{r}
+#| include: false
+source("../processing/analisis_igvust.R")
+source("../processing/analisis_subyacentes.R")
+```
+
+# Análisis IGVUST
+
+## ¿Cómo se construye el IGVUST?
+
+
+El Índice Global de Vulnerabilidad Socioterritorial (IGVUST) es un indicador sintético desarrollado por el Ministerio de Desarrollo Social y Familia de Chile, dentro del Sistema de Indicadores de Vulnerabilidad Socioterritorial (SIVUST). Su objetivo es caracterizar comparativamente los distintos territorios del país en términos de su vulnerabilidad socioterritorial, entendida como la exposición a riesgos que afectan la vida de las personas debido a la ausencia o insuficiencia de activos protectores y a la debilidad en la estructura de oportunidades [@minsoc_sivust_2025]
+
+- **Escala territorial.** La unidad de análisis mínima del SIVUST es la **Unidad Vecinal** (existen 6.887 en el país), y a partir de ella los indicadores se agregan también a nivel comunal y regional. Los datos utilizados en este análisis corresponden a la agregación comunal del índice.
+
+- **Fuentes de datos.** El índice integra información de múltiples registros administrativos del Estado (incluyendo el Registro Civil e Identificación, los Ministerios de Educación y de Salud, la Superintendencia de Seguridad Social y el Instituto Nacional de Estadísticas, entre otros) con el Registro Social de Hogares (RSH) como base poblacional principal.
+
+- **Dimensiones e indicadores.** El IGVUST se construye a partir de **18 indicadores** agrupados en **siete dimensiones**: Ingresos, Trabajo y Pensiones, Salud y Dependencia, Educación, Vivienda, Accesibilidad y Seguridad. Estas corresponden a la fase actual del sistema; el marco conceptual original contempla además las dimensiones de Medioambiente y Desarrollo y Gestión Territorial, no incorporadas aún por falta de información oficial con cobertura nacional. Cada indicador fue seleccionado según criterios técnicos y estadísticos, priorizando aquellos con asociación robusta e inequívoca con la vulnerabilidad, baja correlación entre sí (para evitar redundancia) y buena capacidad discriminativa entre territorios.
+
+- **Tratamiento estadístico.** Antes de agregarse, los indicadores pasan por un proceso de imputación de datos faltantes, truncamiento de valores atípicos, y reescalamiento min-max a una escala común entre 0 y 1. Adicionalmente, los indicadores cuya relación original es "positiva" con el bienestar (Ingreso CSE, Empleo de Larga Duración, Actividad Laboral Registrada) se invierten tras el reescalamiento, de modo que en todos los indicadores del índice, **valores más altos representan siempre mayor vulnerabilidad**.
+
+- **Ponderación y agregación.** Los 18 indicadores se combinan en un único índice mediante ponderadores obtenidos a través de un **Análisis Factorial Exploratorio (AFE)**, método escogido tras comparar alternativas (componentes principales, pesos uniformes, criterio experto) por sus propiedades estadísticas, interpretabilidad y estabilidad. El Ministerio reporta que este esquema de ponderación resultó ser el más robusto ante perturbaciones marginales y cambios en la selección de indicadores.
+
+- **Lectura del resultado.** El valor final del índice se traduce en cuartiles y en un ranking nacional. Los valores menores (cuartil 1 o ranking 1) corresponden a mayor vulnerabilidad, mientras que los valores mayores representan menor vulnerabilidad relativa. Esta es la lógica utilizada a lo largo de este análisis: las comunas en cuartil 1 (`c_ig_nac == 1`) son las de mayor vulnerabilidad socioterritorial relativa dentro del país.
+
+- **Actualización.** El IGVUST se recalcula mensualmente, reflejando tanto los cambios que las personas realizan en el RSH (composición familiar, domicilio, condiciones laborales o de salud) como las actualizaciones de las bases administrativas utilizadas en su construcción.
+
+## Mapa Nacional
+
+```{r}
+#| echo: false
+#| warning: false
+grafico_mapa_nacional
+```
+
+::: {.callout-important}
+## Hallazgo Principal
+Las comunas en el cuartil 1 (más vulnerable) están concentradas en regiones específicas del país, mostrando patrones claros de desigualdad socioterritorial.
+:::
+
+## Las 3 Regiones Más Vulnerables
+
+```{r}
+#| echo: false
+#| warning: false
+patchwork::wrap_plots(mapas_top3, ncol = 3) +
+  patchwork::plot_annotation(title = "Las 3 comunas más vulnerables de Chile",
+                   subtitle = "Según ranking nacional (rank_nac) del IGVUST")
+```
+
+::: {.callout-tip}
+## Contexto Regional
+Estas comunas son las más vulnerables del país según el IGVUST, y se encuentran en regiones con concentraciones significativas de vulnerabilidad. 
+:::
+
+## Descriptivos por Región
+
+```{r}
+#| echo: false
+#| warning: false
+regiones_vulnerabilidad %>%
+  mutate(across(where(is.numeric), ~round(., 3))) %>%
+  arrange(desc(prop_comunas_q1)) %>%
+  select(-codigo_region) %>%
+  knitr::kable(
+    col.names = c("Región", "Promedio IGVUST", "N° Comunas Q1", "Total Comunas", "% Comunas Q1"),
+    caption = "Indicadores de vulnerabilidad por región",
+    format = "html"
+  )
+```
+
+## Conclusiones
+
+::: {.callout-note}
+## Observaciones Clave
+
+- La distribución de vulnerabilidad no es uniforme a lo largo del territorio
+- Existen regiones con concentraciones significativas de comunas vulnerables
+- Se identifican oportunidades para intervenciones territoriales focalizadas
+:::
+
+::: {.callout-warning}
+## Limitaciones de los datos
+
+La variable de cobertura comunal del Registro Social de Hogares (`p_cobertura_com`) supera el 100% en 101 de las 346 comunas del país (29%), principalmente en comunas rurales o de baja población, lo que sugiere un desajuste entre la población de referencia utilizada y el número de personas efectivamente registradas. Esto no afecta directamente el cálculo oficial del IGVUST, pero sí limita la confiabilidad de esta variable como indicador de representatividad para algunas comunas. Cabe destacar el caso de Constitución (Maule), clasificada en el cuartil más vulnerable, cuya cobertura del RSH es de solo 48,5%, por lo que su resultado debe interpretarse con cautela.
+:::
+
+---
+
+
+# Análisis CENSO y Factores subyacentes
+
+## Relación entre IGVUST y factores subyacentes (desarrollo, envejecimiento y riesgo de desastres)
+
+Para complementar el análisis del IGVUST, se incorporó la base de **Factores Subyacentes del Riesgo de Desastres**, que agrega tres índices comunales adicionales: el Índice de Desarrollo Humano (IDH), el Índice Comunal de Factores Subyacentes del Riesgo de Desastres (ICFSR) y el Índice de Riesgo Ajustado por Envejecimiento (IRAPE), además del Índice de Envejecimiento poblacional.
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-correlaciones
+
+tabla_correlaciones <- tibble::tibble(
+  Índice = c("IDH", "ICFSR", "IRAPE", "Índice de Envejecimiento"),
+  Pearson = c(0.80, -0.28, -0.53, -0.37),
+  Spearman = c(0.83, -0.29, -0.50, -0.41),
+  Fuerza = c("Fuerte", "Débil", "Moderada", "Moderada"),
+  Dirección = c("Positiva", "Negativa", "Negativa", "Negativa")
+)
+
+tabla_correlaciones %>%
+  knitr::kable(
+    caption = "Correlación entre el ranking nacional IGVUST y otros índices comunales",
+    digits = 2,
+    format = "html"
+  )
+```
+
+::: {.callout-note}
+## Cómo leer esta tabla
+
+El ranking nacional IGVUST (`rank_nac`) asigna el valor 1 a la comuna más vulnerable del país. Por lo tanto, una correlación **positiva** indica que el índice comparado aumenta junto con la disminución de la vulnerabilidad (comunas menos vulnerables tienen valores más altos de ese índice), mientras que una correlación **negativa** indica lo contrario: el índice aumenta a medida que la vulnerabilidad IGVUST es mayor.
+:::
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: fig-scatter-idh
+#| fig-cap: "Relación entre el ranking nacional IGVUST y el Índice de Desarrollo Humano"
+
+grafico_idh
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: fig-scatter-icfsr
+#| fig-cap: "Relación entre el ranking nacional IGVUST y el riesgo de desastres (ICFSR)"
+
+grafico_icfsr
+```
+
+Los resultados muestran una **relación fuerte y consistente entre el IGVUST y el desarrollo humano** (r = 0.80, ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el **envejecimiento poblacional es moderada** (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.
+
+::: {.callout-warning}
+## Precaución conceptual
+A pesar de la correlación negativa entre envejecimiento y vulnerabilidad, no debemos olvidar lo que presentó Juan Pablo:
+
+No debe equipararse directamente el envejecimiento con la vulnerabilidad. Un modelo conceptual más adecuado plantea una cadena causal: **envejecimiento → capacidad funcional → dependencia → exposición → condiciones territoriales → vulnerabilidad ante desastres**. La correlación observada en este análisis es, por tanto, una asociación indirecta y no debe interpretarse como causalidad directa.
+
+:::
+
+En contraste, la asociación entre el IGVUST y el **riesgo de desastres naturales (ICFSR)** es considerablemente más débil (r = -0.28, ρ = -0.29). Esto indica que la vulnerabilidad socioterritorial y el riesgo de desastres son **dimensiones relativamente independientes**: una comuna puede presentar alta vulnerabilidad social sin necesariamente estar expuesta a un riesgo elevado de desastres, y viceversa — patrón que se observa con claridad en el mapa bivariado presentado a continuación.
+
+## Mapa bivariado: vulnerabilidad social y riesgo de desastres
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: fig-mapa-bivariado
+#| fig-cap: "Distribución comunal combinada de vulnerabilidad IGVUST y riesgo de desastres (ICFSR)"
+#| fig-width: 4
+#| fig-asp: 2.2
+#| fig-align: center
+#| out-width: "60%"
+
+library(patchwork)
+
+
+# mapa 
+mapa_bivariado <- ggplot() +
+  geom_sf(data = mapa_biv, aes(fill = bi_class), color = "white", linewidth = 0.05, show.legend = FALSE) +
+  bi_scale_fill(pal = "DkBlue2", dim = 3) +
+  coord_sf(xlim = c(-76, -66), ylim = c(-56, -17), expand = FALSE) +
+  labs(title = "Vulnerabilidad IGVUST y riesgo\nde desastres (ICFSR) por comuna") +
+  theme_void() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 10, margin = margin(b = 5)),
+    plot.margin = margin(0, 0, 0, 0)
+  )
+
+leyenda_bivariada <- bi_legend(pal = "DkBlue2",
+                                dim = 3,
+                                xlab = "Menos vulnerable (IGVUST) →",  
+                                ylab = "Mayor riesgo (ICFSR) →",
+                                size = 5)
+
+# leyenda como panel separado
+mapa_bivariado + leyenda_bivariada +
+  plot_layout(widths = c(3, 1))
+```
+
+
+## Interpretación del mapa bivariado
+
+El mapa combina en una sola visualización las dos dimensiones exploradas: la vulnerabilidad socioterritorial (IGVUST, eje horizontal) y el riesgo de desastres (ICFSR, eje vertical). Cada uno de los 9 colores representa una combinación distinta de ambos niveles (bajo/medio/alto), y el análisis de la categoría más frecuente por región (@tbl-bivariada-regional) permite identificar patrones geográficos concretos más allá de la lectura visual.
+
+A diferencia de un mapa univariado, donde se esperaría una progresión de color relativamente ordenada, aquí los colores aparecen distribuidos de forma heterogénea a lo largo del territorio. Esto es consistente con la correlación débil (r = -0,28; ρ = -0,29) encontrada entre ambas variables: **la vulnerabilidad social y el riesgo de desastres no siguen el mismo patrón geográfico**, por lo que el mapa combinado muestra un mosaico de categorías antes que una franja continua de un solo color.
+
+**Doble vulnerabilidad: La Araucanía, Ñuble y Los Lagos.** Estas son las únicas regiones cuya categoría más frecuente combina alta vulnerabilidad social y alto riesgo de desastres simultáneamente, concentrando entre el 23% y el 38% de sus comunas en este perfil crítico. Este es el hallazgo más relevante del análisis, ya que no solo son regiones socialmente vulnerables, sino que además presentan mayor exposición física a desastres.
+
+**Antofagasta, Magallanes y Atacama: baja vulnerabilidad social con alto riesgo de desastres.** Este patrón es geográficamente coherente, ya que son zonas de alta exposición física (aluviones y sismicidad en el norte, condiciones climáticas extremas en el extremo sur), pero con indicadores socioeconómicos relativamente favorables, como por ejemplo la actividad minera en el norte.
+
+**Metropolitana de Santiago y Valparaíso: el perfil más favorable en ambas dimensiones.** Un 44,2% de las comunas de la Región Metropolitana y un 21,1% de las de Valparaíso caen en la categoría de menor vulnerabilidad social y menor riesgo de desastres, consistente con su condición de regiones más urbanizadas y con mejor infraestructura del país.
+
+**El resto de las regiones muestra mayor heterogeneidad interna.** Solo cuatro regiones (Antofagasta, Arica y Parinacota, Magallanes y Metropolitana) presentan una categoría verdaderamente dominante, con más del 44% de sus comunas compartiendo el mismo perfil. En el resto del país —incluyendo Los Ríos, Coquimbo, Maule, O'Higgins y Biobío— la categoría más frecuente no supera el 30-42% de las comunas, lo que indica que dentro de estas regiones coexisten comunas con perfiles de riesgo bastante distintos entre sí, sin un patrón regional único que las caracterice.
+
+**Lectura general.** Estos resultados matizan la lectura visual del mapa y confirman cuantitativamente el patrón sugerido por la correlación débil entre ambas variables, la vulnerabilidad social y el riesgo de desastres no coinciden geográficamente en la mayor parte del territorio nacional. La excepción crítica son La Araucanía, Ñuble y Los Lagos, las regiones donde ambas dimensiones de riesgo convergen con mayor frecuencia relativa.
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-bivariada-regional
+
+tabla_bivariada_regional %>%
+  knitr::kable(
+    caption = "Categoría bivariada más frecuente por región (vulnerabilidad IGVUST y riesgo de desastres ICFSR)",
+    format = "html"
+  )
+```
+
+
+::: {.callout-tip}
+## Cómo leer esta tabla
+
+Cada fila muestra, para una región, la **categoría bivariada más frecuente** entre sus comunas es decir, la combinación de nivel de vulnerabilidad (IGVUST) y nivel de riesgo de desastres (ICFSR) que más se repite dentro de esa región, junto con cuántas comunas comparten esa combinación respecto del total regional (`% región`).
+
+Un `% región` **alto** (por ejemplo, sobre 44%) indica que la región es relativamente **homogénea**: buena parte de sus comunas comparten el mismo perfil de riesgo. Un `% región` **bajo** (por ejemplo, bajo 30%) indica una región **heterogénea**, donde ninguna combinación agrupa a una parte importante de las comunas y conviven distintos perfiles dentro del mismo territorio.
+
+Es importante notar que esta tabla no describe a "toda" la región, sino solo a su categoría más común: incluso en los casos con mayor porcentaje, una parte relevante de las comunas puede pertenecer a otras combinaciones. Además, en regiones con pocas comunas (como Arica y Parinacota, con 4), los porcentajes deben interpretarse con cautela, ya que unas pocas comunas pueden generar valores porcentuales altos sin representar necesariamente un patrón robusto.
+:::
+
+
+
+
+
+
+
+
+
+*Última actualización: `r format(Sys.Date(), '%d de %B de %Y')`*

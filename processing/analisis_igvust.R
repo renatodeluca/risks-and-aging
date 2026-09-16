@@ -6,7 +6,7 @@ library(chilemapas)
 library(sf)
 library(patchwork)
 library(tidyverse)
-
+options(scipen = 999)
 # cargar bbdd
 datos <- read_excel("../input/data-orig/igvust.xlsx")
 

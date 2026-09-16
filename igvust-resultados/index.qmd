@@ -1,6 +1,6 @@
 ---
 title: "Vulnerabilidad Socioterritorial en Chile"
-subtitle: "Análisis del Índice de Geografía de la Vulnerabilidad Urbana y Social Territorial (IGVUST) y de datos del CENSO 2024"
+subtitle: "Análisis del Índice de Geografía de la Vulnerabilidad Urbana y Social Territorial (IGVUST)"
 authors:
   - name: Renato De Luca
     affiliation: Universidad de Chile
@@ -22,7 +22,9 @@ format:
     code-summary: "Ver código"
     fig-cap-location: bottom
     title-block-banner: true
-    title-block-banner-color: "#6e4416"
+    title-block-banner-color: "#2a5caa"
+execute:
+  working-directory: ../
 ---
 
 ```{r}
@@ -30,16 +32,13 @@ format:
 source("../processing/analisis_igvust.R")
 ```
 
-# Análisis IGVUST
-
-
-## Resumen
+## Resumen Ejecutivo
 
 Este análisis examina la vulnerabilidad socioterritorial en Chile utilizando el Índice de Geografía de la Vulnerabilidad Urbana y Social Territorial (IGVUST), identificando patrones geográficos y comunas de mayor riesgo.
 
 ## Cómo se construye el IGVUST
 
-El Índice Global de Vulnerabilidad Socioterritorial (IGVUST) es un indicador sintético desarrollado por el Ministerio de Desarrollo Social y Familia de Chile, dentro del Sistema de Indicadores de Vulnerabilidad Socioterritorial (SIVUST). Su objetivo es caracterizar comparativamente los distintos territorios del país (Unidades Vecinales, comunas y regiones) en términos de su vulnerabilidad socioterritorial agregada [@minsoc_igvust_25].
+El Índice Global de Vulnerabilidad Socioterritorial (IGVUST) es un indicador sintético desarrollado por el Ministerio de Desarrollo Social y Familia de Chile, dentro del Sistema de Indicadores de Vulnerabilidad Socioterritorial (SIVUST). Su objetivo es caracterizar comparativamente los distintos territorios del país (Unidades Vecinales, comunas y regiones) en términos de su vulnerabilidad socioterritorial agregada.
 
 **Fuentes de datos.** El índice integra información de múltiples registros administrativos del Estado, incluyendo el Registro Civil e Identificación, los Ministerios de Educación y de Salud, la Superintendencia de Seguridad Social y el Instituto Nacional de Estadísticas, entre otros. La base poblacional principal proviene del Registro Social de Hogares (RSH), que permite georreferenciar a las personas a nivel de Unidad Vecinal.
 
@@ -86,10 +85,10 @@ patchwork::wrap_plots(mapas_top3, ncol = 3) +
 
 ::: {.callout-tip}
 ## Contexto Regional
-Estas comunas son las más vulnerables del país según el IGVUST, y se encuentran en regiones con concentraciones significativas de vulnerabilidad. 
+Estas tres comunas requieren atención prioritaria en políticas de desarrollo territorial y mejora de condiciones de vida.
 :::
 
-## Descriptivos por Región
+## Estadísticas por Región
 
 ```{r}
 #| echo: false
@@ -122,10 +121,5 @@ La variable de cobertura comunal del Registro Social de Hogares (`p_cobertura_co
 :::
 
 ---
-
-
-# Análisis CENSO y Factores subyacentes
-
-
 
 *Última actualización: `r format(Sys.Date(), '%d de %B de %Y')`*

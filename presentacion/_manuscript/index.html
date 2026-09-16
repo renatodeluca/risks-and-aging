@@ -1,175 +1,51 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.9.37">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
 
-    <meta name="dcterms.date" content="2026-09-15">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <title>Vulnerabilidad Socioterritorial en Chile</title>
-    <style>
-      /* Default styles provided by pandoc.
-      ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-      */
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      div.columns{display: flex; gap: min(4vw, 1.5em);}
-      div.column{flex: auto; overflow-x: auto;}
-      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-      ul.task-list{list-style: none;}
-      ul.task-list li input[type="checkbox"] {
-        width: 0.8em;
-        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-        vertical-align: middle;
-      }
-      /* CSS for syntax highlighting */
-      html { -webkit-text-size-adjust: 100%; }
-      pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-      pre > code.sourceCode > span:empty { height: 1.2em; }
-      .sourceCode { overflow: visible; }
-      code.sourceCode > span { color: inherit; text-decoration: inherit; }
-      div.sourceCode { margin: 1em 0; }
-      pre.sourceCode { margin: 0; }
-      @media screen {
-      div.sourceCode { overflow: auto; }
-      }
-      @media print {
-      pre > code.sourceCode { white-space: pre-wrap; }
-      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-      }
-      pre.numberSource code
-        { counter-reset: source-line 0; }
-      pre.numberSource code > span
-        { position: relative; left: -4em; counter-increment: source-line; }
-      pre.numberSource code > span > a:first-child::before
-        { content: counter(source-line);
-          position: relative; left: -1em; text-align: right; vertical-align: baseline;
-          border: none; display: inline-block;
-          -webkit-touch-callout: none; -webkit-user-select: none;
-          -khtml-user-select: none; -moz-user-select: none;
-          -ms-user-select: none; user-select: none;
-          padding: 0 4px; width: 4em;
-        }
-      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-      div.sourceCode
-        {   }
-      @media screen {
-      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-      }
-      /* CSS for citations */
-      div.csl-bib-body { }
-      div.csl-entry {
-        clear: both;
-      }
-      .hanging-indent div.csl-entry {
-        margin-left:2em;
-        text-indent:-2em;
-      }
-      div.csl-left-margin {
-        min-width:2em;
-        float:left;
-      }
-      div.csl-right-inline {
-        margin-left:2em;
-        padding-left:1em;
-      }
-      div.csl-indent {
-        margin-left: 2em;
-      }    </style>
+<meta name="dcterms.date" content="2026-09-16">
 
-    <style>
-      body.hypothesis-enabled #quarto-embed-header {
-        padding-right: 36px;
-      }
+<title>Vulnerabilidad Socioterritorial en Chile</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
-      #quarto-embed-header {
-        height: 3em;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: solid 1px;
-      }
 
-      #quarto-embed-header h6 {
-        font-size: 1.1em;
-        padding-top: 0.6em;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-weight: 400;
-      }
-
-      #quarto-embed-header a.quarto-back-link,
-      #quarto-embed-header a.quarto-download-embed {
-        font-size: 0.8em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-      }
-
-      .quarto-back-container {
-        padding-left: 0.5em;
-        display: flex;
-      }
-
-      .headroom {
-          will-change: transform;
-          transition: transform 200ms linear;
-      }
-
-      .headroom--pinned {
-          transform: translateY(0%);
-      }
-
-      .headroom--unpinned {
-          transform: translateY(-100%);
-      }      
-    </style>
-
-    <script>
-    window.document.addEventListener("DOMContentLoaded", function () {
-
-      var header = window.document.querySelector("#quarto-embed-header");
-      const titleBannerEl = window.document.querySelector("body > #title-block-header");
-      if (titleBannerEl) {
-        titleBannerEl.style.paddingTop = header.clientHeight + "px";
-      }
-      const contentEl = window.document.getElementById('quarto-content');
-      for (const child of contentEl.children) {
-        child.style.paddingTop = header.clientHeight + "px";
-        child.style.marginTop = "1em";
-      }
-
-      // Use the article root if the `back` call doesn't work. This isn't perfect
-      // but should typically work
-      window.quartoBackToArticle = () => {
-        var currentUrl = window.location.href;
-        window.history.back();
-        setTimeout(() => {
-            // if location was not changed in 100 ms, then there is no history back
-            if(currentUrl === window.location.href){              
-                // redirect to site root
-                window.location.href = "index.html";
-            }
-        }, 100);
-      }
-
-      const headroom = new window.Headroom(header, {
-        tolerance: 5,
-        onPin: function () {
-        },
-        onUnpin: function () {
-        },
-      });
-      headroom.init();
-    });
-    </script>
-
-    
-<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -188,12 +64,14 @@
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-     <style>html{ scroll-behavior: smooth; }</style>  <script async="" src="https://hypothes.is/embed.js"></script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>  <style>
+</script>
+<style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -208,13 +86,15 @@
       .quarto-title-block .quarto-title-banner {
         color: #6e4416;
       }
-</style>  
-      <meta name="citation_title" content="Vulnerabilidad Socioterritorial en Chile">
+</style>
+
+
+<meta name="citation_title" content="Vulnerabilidad Socioterritorial en Chile">
 <meta name="citation_author" content="Renato De Luca">
-<meta name="citation_publication_date" content="2026-09-15">
-<meta name="citation_cover_date" content="2026-09-15">
+<meta name="citation_publication_date" content="2026-09-16">
+<meta name="citation_cover_date" content="2026-09-16">
 <meta name="citation_year" content="2026">
-<meta name="citation_online_date" content="2026-09-15">
+<meta name="citation_online_date" content="2026-09-16">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=From mandates to mechanisms: Institutional vulnerability, decentralized governance, and the challenges of local disaster risk reduction implementation;,citation_author=I. Alcántara-Ayala;,citation_author=et al.;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_journal_title=International Journal of Disaster Risk Science;">
 <meta name="citation_reference" content="citation_title=Los adultos mayores y las catástrofes: Preparación y respuesta;,citation_author=American Association for Geriatric Psychiatry [AAGP];,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;">
@@ -232,6 +112,7 @@
 <meta name="citation_reference" content="citation_title=Social vulnerability indices: A scoping review;,citation_author=J. C. Mah;,citation_author=J. L. Penwarden;,citation_author=H. Pott;,citation_author=O. Theou;,citation_author=M. K. Andrew;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_journal_title=BMC Public Health;">
 <meta name="citation_reference" content="citation_title=Social vulnerability indicators for flooding in Aotearoa New Zealand;,citation_author=K. Mason;,citation_author=et al.;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_journal_title=International Journal of Environmental Research and Public Health;">
 <meta name="citation_reference" content="citation_title=Informe de Resultados del Índice Global de Vulnerabilidad Socioterritorial (IGVUST);,citation_author=Ministerio de Desarrollo Social y Familia;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;">
+<meta name="citation_reference" content="citation_title=Informe Metodológico: Sistema de Indicadores de Vulnerabilidad Socioterritorial;,citation_author=Ministerio de Desarrollo Social y Familia;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_technical_report_institution=Subsecretaría de Evaluación Social, Ministerio de Desarrollo Social y Familia, Gobierno de Chile;">
 <meta name="citation_reference" content="citation_title=Reconceptualizing community-based disaster risk management: From external-led projects to community-centered resilience building through a systematic review;,citation_author=A. Moktan;,citation_author=et al.;,citation_publication_date=2026;,citation_cover_date=2026;,citation_year=2026;,citation_journal_title=Progress in Disaster Science;">
 <meta name="citation_reference" content="citation_title=Experience and local memory of older people in the face of disasters: A systematic review;,citation_author=C. Navarrete-Valladares;,citation_author=J. Sandoval-Díaz;,citation_author=E. Sandoval-Obando;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_doi=10.3389/fpubh.2023.1163561;,citation_volume=11;,citation_journal_title=Frontiers in Public Health;">
 <meta name="citation_reference" content="citation_title=Vulnerabilidad y capacidad adaptativa de personas mayores ante el cambio climático: Una revisión sistemática;,citation_author=C. Navarrete-Valladares;,citation_author=J. Sandoval;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=2;,citation_doi=10.30849/ripijp.v58i2.1840;,citation_volume=58;,citation_journal_title=Revista Interamericana de Psicología / Interamerican Journal of Psychology;">
@@ -258,7 +139,7 @@
 <meta name="citation_reference" content="citation_title=How does social capital facilitate community disaster resilience? A systematic review;,citation_author=G. Zhao;,citation_author=et al.;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_journal_title=Frontiers in Environmental Science;">
 </head>
 
-  <body class="quarto-notebook quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -421,15 +302,8 @@
       toggleColorMode(false);
     }
   </script>
-    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
-      
-      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
-      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
-          </div>
-
-     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Vulnerabilidad Socioterritorial en Chile</h1>
@@ -459,7 +333,7 @@
                 <div>
             <div class="quarto-title-meta-heading">Published</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">September 15, 2026</p>
+              <p class="date">September 16, 2026</p>
             </div>
           </div>
           
@@ -482,145 +356,57 @@
   <ul class="collapse">
   <li><a href="#análisis-igvust" id="toc-análisis-igvust" class="nav-link active" data-scroll-target="#análisis-igvust"><span class="header-section-number">1</span> Análisis IGVUST</a>
   <ul class="collapse">
-  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen"><span class="header-section-number">1.1</span> Resumen</a></li>
-  <li><a href="#cómo-se-construye-el-igvust" id="toc-cómo-se-construye-el-igvust" class="nav-link" data-scroll-target="#cómo-se-construye-el-igvust"><span class="header-section-number">1.2</span> Cómo se construye el IGVUST</a></li>
-  <li><a href="#mapa-nacional" id="toc-mapa-nacional" class="nav-link" data-scroll-target="#mapa-nacional"><span class="header-section-number">1.3</span> Mapa Nacional</a></li>
-  <li><a href="#las-3-regiones-más-vulnerables" id="toc-las-3-regiones-más-vulnerables" class="nav-link" data-scroll-target="#las-3-regiones-más-vulnerables"><span class="header-section-number">1.4</span> Las 3 Regiones Más Vulnerables</a></li>
-  <li><a href="#descriptivos-por-región" id="toc-descriptivos-por-región" class="nav-link" data-scroll-target="#descriptivos-por-región"><span class="header-section-number">1.5</span> Descriptivos por Región</a></li>
-  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones"><span class="header-section-number">1.6</span> Conclusiones</a></li>
+  <li><a href="#cómo-se-construye-el-igvust" id="toc-cómo-se-construye-el-igvust" class="nav-link" data-scroll-target="#cómo-se-construye-el-igvust"><span class="header-section-number">1.1</span> ¿Cómo se construye el IGVUST?</a></li>
+  <li><a href="#mapa-nacional" id="toc-mapa-nacional" class="nav-link" data-scroll-target="#mapa-nacional"><span class="header-section-number">1.2</span> Mapa Nacional</a></li>
+  <li><a href="#las-3-regiones-más-vulnerables" id="toc-las-3-regiones-más-vulnerables" class="nav-link" data-scroll-target="#las-3-regiones-más-vulnerables"><span class="header-section-number">1.3</span> Las 3 Regiones Más Vulnerables</a></li>
+  <li><a href="#descriptivos-por-región" id="toc-descriptivos-por-región" class="nav-link" data-scroll-target="#descriptivos-por-región"><span class="header-section-number">1.4</span> Descriptivos por Región</a></li>
+  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones"><span class="header-section-number">1.5</span> Conclusiones</a></li>
   </ul></li>
-  <li><a href="#análisis-censo-y-factores-subyacentes" id="toc-análisis-censo-y-factores-subyacentes" class="nav-link" data-scroll-target="#análisis-censo-y-factores-subyacentes"><span class="header-section-number">2</span> Análisis CENSO y Factores subyacentes</a></li>
+  <li><a href="#análisis-censo-y-factores-subyacentes" id="toc-análisis-censo-y-factores-subyacentes" class="nav-link" data-scroll-target="#análisis-censo-y-factores-subyacentes"><span class="header-section-number">2</span> Análisis CENSO y Factores subyacentes</a>
+  <ul class="collapse">
+  <li><a href="#relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres" id="toc-relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres" class="nav-link" data-scroll-target="#relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres"><span class="header-section-number">2.1</span> Relación entre IGVUST y factores subyacentes (desarrollo, envejecimiento y riesgo de desastres)</a></li>
+  <li><a href="#mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres" id="toc-mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres" class="nav-link" data-scroll-target="#mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres"><span class="header-section-number">2.2</span> Mapa bivariado: vulnerabilidad social y riesgo de desastres</a></li>
+  <li><a href="#interpretación-del-mapa-bivariado" id="toc-interpretación-del-mapa-bivariado" class="nav-link" data-scroll-target="#interpretación-del-mapa-bivariado"><span class="header-section-number">2.3</span> Interpretación del mapa bivariado</a></li>
+  </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">        
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-       <div class="cell-container code-fold"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../processing/analisis_igvust.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
 
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
 
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: sf</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Linking to GEOS 3.13.0, GDAL 3.8.5, PROJ 9.5.1; sf_use_s2() is TRUE</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>La documentacion del paquete y ejemplos de uso se encuentran en https://pacha.dev/chilemapas/.
-Visita https://buymeacoffee.com/pacha/ si deseas donar para contribuir al desarrollo de este software.</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ forcats   1.0.1     ✔ readr     2.2.0
-✔ ggplot2   4.0.3     ✔ stringr   1.6.0
-✔ lubridate 1.9.5     ✔ tibble    3.3.1
-✔ purrr     1.2.2     ✔ tidyr     1.3.2
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
-New names:
-ℹ Limpiando 346 nombres de región (17 son distintos)
 
-→ Paso 1: confirmar regiones correctas
+  
 
-ℹ De las 17 regiones distintas, ninguna tiene nombres 100% correctos. Los siguientes pasos intentarán la limpieza
 
-→ Paso 2: coincidencias por limpieza de texto
-
-ℹ A partir de la limpieza de texto, se limpiaron 17 de 17 regiones: Arica y Parinacota, Tarapacá, Antofagasta, Atacama, Coquimbo, Valparaíso, Metropolitana de Santiago, Libertador General Bernardo O'Higgins, Maule, Ñuble, Biobío, La Araucanía, Los Ríos, Los Lagos, Aysén del General Carlos Ibáñez del Campo y Magallanes y de la Antártica Chilena
-
-→ Paso 3: casos especiales
-
-ℹ Se encontraron 3 casos especiales: Biobío, Aysén del General Carlos Ibáñez del Campo y Magallanes y de la Antártica Chilena
-
-→ Paso 4: coincidencias aproximadas de texto
-
-! No se limpiaron regiones como parte de este paso
-
-→ Conclusión de limpieza de regiones
-
-✔ De las 17 regiones distintas, se limpiaron 17 en total (100%)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 16 × 6
-   Region     codigo_region prom_c_ig_nac n_comunas_q1 n_comunas prop_comunas_q1
-   &lt;chr&gt;      &lt;chr&gt;                 &lt;dbl&gt;        &lt;int&gt;     &lt;int&gt;           &lt;dbl&gt;
- 1 La Arauca… 09                     1.38           23        32          0.719 
- 2 Ñuble      16                     1.48           13        21          0.619 
- 3 Arica y P… 15                     1.5             2         4          0.5   
- 4 Biobío     08                     2.09           12        33          0.364 
- 5 Aysén del… 11                     2.5             3        10          0.3   
- 6 Tarapacá   01                     2.14            2         7          0.286 
- 7 Los Lagos  10                     2.23            8        30          0.267 
- 8 Coquimbo   04                     2.33            3        15          0.2   
- 9 Maule      07                     2.33            6        30          0.2   
-10 Libertado… 06                     2.58            6        33          0.182 
-11 Los Ríos   14                     2.17            2        12          0.167 
-12 Atacama    03                     2.89            1         9          0.111 
-13 Valparaíso 05                     2.97            3        38          0.0789
-14 Metropoli… 13                     3.46            2        52          0.0385
-15 Antofagas… 02                     3.56            0         9          0     
-16 Magallane… 12                     3.82            0        11          0     </code></pre>
-</div>
-</div></div>
 <section id="análisis-igvust" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Análisis IGVUST</h1>
-<section id="resumen" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="resumen"><span class="header-section-number">1.1</span> Resumen</h2>
-<p>Este análisis examina la vulnerabilidad socioterritorial en Chile utilizando el Índice de Geografía de la Vulnerabilidad Urbana y Social Territorial (IGVUST), identificando patrones geográficos y comunas de mayor riesgo.</p>
-</section>
-<section id="cómo-se-construye-el-igvust" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="cómo-se-construye-el-igvust"><span class="header-section-number">1.2</span> Cómo se construye el IGVUST</h2>
-<p>El Índice Global de Vulnerabilidad Socioterritorial (IGVUST) es un indicador sintético desarrollado por el Ministerio de Desarrollo Social y Familia de Chile, dentro del Sistema de Indicadores de Vulnerabilidad Socioterritorial (SIVUST). Su objetivo es caracterizar comparativamente los distintos territorios del país (Unidades Vecinales, comunas y regiones) en términos de su vulnerabilidad socioterritorial agregada <span class="citation" data-cites="minsoc_igvust_25">(<a href="#ref-minsoc_igvust_25" role="doc-biblioref">Ministerio de Desarrollo Social y Familia 2025</a>)</span>.</p>
-<p><strong>Fuentes de datos.</strong> El índice integra información de múltiples registros administrativos del Estado, incluyendo el Registro Civil e Identificación, los Ministerios de Educación y de Salud, la Superintendencia de Seguridad Social y el Instituto Nacional de Estadísticas, entre otros. La base poblacional principal proviene del Registro Social de Hogares (RSH), que permite georreferenciar a las personas a nivel de Unidad Vecinal.</p>
-<p><strong>Dimensiones e indicadores.</strong> El IGVUST se construye a partir de 18 indicadores agrupados en siete dimensiones:</p>
+<section id="cómo-se-construye-el-igvust" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="cómo-se-construye-el-igvust"><span class="header-section-number">1.1</span> ¿Cómo se construye el IGVUST?</h2>
+<p>El Índice Global de Vulnerabilidad Socioterritorial (IGVUST) es un indicador sintético desarrollado por el Ministerio de Desarrollo Social y Familia de Chile, dentro del Sistema de Indicadores de Vulnerabilidad Socioterritorial (SIVUST). Su objetivo es caracterizar comparativamente los distintos territorios del país en términos de su vulnerabilidad socioterritorial, entendida como la exposición a riesgos que afectan la vida de las personas debido a la ausencia o insuficiencia de activos protectores y a la debilidad en la estructura de oportunidades <span class="citation" data-cites="minsoc_sivust_2025">(<a href="#ref-minsoc_sivust_2025" role="doc-biblioref">Ministerio de Desarrollo Social y Familia 2025</a>)</span></p>
 <ul>
-<li>Ingresos</li>
-<li>Trabajo y Pensiones</li>
-<li>Salud y Dependencia</li>
-<li>Educación</li>
-<li>Vivienda</li>
-<li>Accesibilidad</li>
-<li>Seguridad</li>
+<li><p><strong>Escala territorial.</strong> La unidad de análisis mínima del SIVUST es la <strong>Unidad Vecinal</strong> (existen 6.887 en el país), y a partir de ella los indicadores se agregan también a nivel comunal y regional. Los datos utilizados en este análisis corresponden a la agregación comunal del índice.</p></li>
+<li><p><strong>Fuentes de datos.</strong> El índice integra información de múltiples registros administrativos del Estado (incluyendo el Registro Civil e Identificación, los Ministerios de Educación y de Salud, la Superintendencia de Seguridad Social y el Instituto Nacional de Estadísticas, entre otros) con el Registro Social de Hogares (RSH) como base poblacional principal.</p></li>
+<li><p><strong>Dimensiones e indicadores.</strong> El IGVUST se construye a partir de <strong>18 indicadores</strong> agrupados en <strong>siete dimensiones</strong>: Ingresos, Trabajo y Pensiones, Salud y Dependencia, Educación, Vivienda, Accesibilidad y Seguridad. Estas corresponden a la fase actual del sistema; el marco conceptual original contempla además las dimensiones de Medioambiente y Desarrollo y Gestión Territorial, no incorporadas aún por falta de información oficial con cobertura nacional. Cada indicador fue seleccionado según criterios técnicos y estadísticos, priorizando aquellos con asociación robusta e inequívoca con la vulnerabilidad, baja correlación entre sí (para evitar redundancia) y buena capacidad discriminativa entre territorios.</p></li>
+<li><p><strong>Tratamiento estadístico.</strong> Antes de agregarse, los indicadores pasan por un proceso de imputación de datos faltantes, truncamiento de valores atípicos, y reescalamiento min-max a una escala común entre 0 y 1. Adicionalmente, los indicadores cuya relación original es “positiva” con el bienestar (Ingreso CSE, Empleo de Larga Duración, Actividad Laboral Registrada) se invierten tras el reescalamiento, de modo que en todos los indicadores del índice, <strong>valores más altos representan siempre mayor vulnerabilidad</strong>.</p></li>
+<li><p><strong>Ponderación y agregación.</strong> Los 18 indicadores se combinan en un único índice mediante ponderadores obtenidos a través de un <strong>Análisis Factorial Exploratorio (AFE)</strong>, método escogido tras comparar alternativas (componentes principales, pesos uniformes, criterio experto) por sus propiedades estadísticas, interpretabilidad y estabilidad. El Ministerio reporta que este esquema de ponderación resultó ser el más robusto ante perturbaciones marginales y cambios en la selección de indicadores.</p></li>
+<li><p><strong>Lectura del resultado.</strong> El valor final del índice se traduce en cuartiles y en un ranking nacional. Los valores menores (cuartil 1 o ranking 1) corresponden a mayor vulnerabilidad, mientras que los valores mayores representan menor vulnerabilidad relativa. Esta es la lógica utilizada a lo largo de este análisis: las comunas en cuartil 1 (<code>c_ig_nac == 1</code>) son las de mayor vulnerabilidad socioterritorial relativa dentro del país.</p></li>
+<li><p><strong>Actualización.</strong> El IGVUST se recalcula mensualmente, reflejando tanto los cambios que las personas realizan en el RSH (composición familiar, domicilio, condiciones laborales o de salud) como las actualizaciones de las bases administrativas utilizadas en su construcción.</p></li>
 </ul>
-<p>Cada indicador fue seleccionado según criterios técnicos, priorizando aquellos con una asociación robusta e inequívoca con el concepto de vulnerabilidad.</p>
-<p><strong>Ponderación y agregación.</strong> A diferencia de índices que asignan pesos iguales o arbitrarios a cada componente, el IGVUST determina sus ponderadores mediante un análisis factorial que considera la naturaleza estadística de los datos. Este procedimiento genera pesos específicos tanto a nivel de dimensión como de cada indicador individual, permitiendo además calcular el aporte relativo de cada dimensión al resultado final de un territorio determinado.</p>
-<p><strong>Lectura del resultado.</strong> El valor final del índice se traduce en cuartiles y en un ranking nacional. La convención de lectura es la siguiente: los valores menores (cuartil 1 o ranking 1) corresponden a mayor vulnerabilidad, mientras que los valores mayores representan menor vulnerabilidad relativa. Esta es la lógica utilizada a lo largo de este análisis: las comunas en cuartil 1 (<code>c_ig_nac == 1</code>) son las de mayor vulnerabilidad socioterritorial relativa dentro del país.</p>
-<p><strong>Actualización.</strong> El IGVUST se recalcula mensualmente, reflejando tanto los cambios que las personas realizan en el RSH (composición familiar, domicilio, condiciones laborales o de salud) como las actualizaciones de las bases administrativas utilizadas en su construcción.</p>
 </section>
-<section id="mapa-nacional" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="mapa-nacional"><span class="header-section-number">1.3</span> Mapa Nacional</h2>
-<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>grafico_mapa_nacional</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="mapa-nacional" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="mapa-nacional"><span class="header-section-number">1.2</span> Mapa Nacional</h2>
+<div class="cell">
 <div class="cell-output-display">
-<div class="">
+<div>
 <figure class="figure">
-<p class=""><a href="index_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
+<p><a href="index_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
-</div></div>
+<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -635,23 +421,17 @@ New names:
 </div>
 </div>
 </section>
-<section id="las-3-regiones-más-vulnerables" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="las-3-regiones-más-vulnerables"><span class="header-section-number">1.4</span> Las 3 Regiones Más Vulnerables</h2>
-<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>patchwork<span class="sc">::</span><span class="fu">wrap_plots</span>(mapas_top3, <span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  patchwork<span class="sc">::</span><span class="fu">plot_annotation</span>(<span class="at">title =</span> <span class="st">"Las 3 comunas más vulnerables de Chile"</span>,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">subtitle =</span> <span class="st">"Según ranking nacional (rank_nac) del IGVUST"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="las-3-regiones-más-vulnerables" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="las-3-regiones-más-vulnerables"><span class="header-section-number">1.3</span> Las 3 Regiones Más Vulnerables</h2>
+<div class="cell">
 <div class="cell-output-display">
-<div class="">
+<div>
 <figure class="figure">
-<p class=""><a href="index_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></a></p>
+<p><a href="index_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
-</div></div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -666,21 +446,9 @@ New names:
 </div>
 </div>
 </section>
-<section id="descriptivos-por-región" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="descriptivos-por-región"><span class="header-section-number">1.5</span> Descriptivos por Región</h2>
-<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell">
-<details class="code-fold">
-<summary>Ver código</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>regiones_vulnerabilidad <span class="sc">%&gt;%</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span><span class="fu">round</span>(., <span class="dv">3</span>))) <span class="sc">%&gt;%</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(prop_comunas_q1)) <span class="sc">%&gt;%</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>codigo_region) <span class="sc">%&gt;%</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Región"</span>, <span class="st">"Promedio IGVUST"</span>, <span class="st">"N° Comunas Q1"</span>, <span class="st">"Total Comunas"</span>, <span class="st">"% Comunas Q1"</span>),</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Indicadores de vulnerabilidad por región"</span>,</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">format =</span> <span class="st">"html"</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="descriptivos-por-región" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="descriptivos-por-región"><span class="header-section-number">1.4</span> Descriptivos por Región</h2>
+<div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>Indicadores de vulnerabilidad por región</caption>
@@ -809,10 +577,10 @@ New names:
 </tbody>
 </table>
 </div>
-</div></div>
+</div>
 </section>
-<section id="conclusiones" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="conclusiones"><span class="header-section-number">1.6</span> Conclusiones</h2>
+<section id="conclusiones" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="conclusiones"><span class="header-section-number">1.5</span> Conclusiones</h2>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -848,15 +616,329 @@ New names:
 </section>
 <section id="análisis-censo-y-factores-subyacentes" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Análisis CENSO y Factores subyacentes</h1>
-<p><em>Última actualización: 15 de September de 2026</em></p>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-minsoc_igvust_25" class="csl-entry" role="listitem">
-Ministerio de Desarrollo Social y Familia. 2025. <em>Informe de <span>Resultados</span> Del <span>Índice Global</span> de <span>Vulnerabilidad Socioterritorial</span> (<span>IGVUST</span>)</em>.
+<section id="relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres"><span class="header-section-number">2.1</span> Relación entre IGVUST y factores subyacentes (desarrollo, envejecimiento y riesgo de desastres)</h2>
+<p>Para complementar el análisis del IGVUST, se incorporó la base de <strong>Factores Subyacentes del Riesgo de Desastres</strong>, que agrega tres índices comunales adicionales: el Índice de Desarrollo Humano (IDH), el Índice Comunal de Factores Subyacentes del Riesgo de Desastres (ICFSR) y el Índice de Riesgo Ajustado por Envejecimiento (IRAPE), además del Índice de Envejecimiento poblacional.</p>
+<div class="cell">
+<div id="tbl-correlaciones" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-correlaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices comunales
+</figcaption>
+<div aria-describedby="tbl-correlaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Índice</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Pearson</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Spearman</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Fuerza</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Dirección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">IDH</td>
+<td style="text-align: right;">0.80</td>
+<td style="text-align: right;">0.83</td>
+<td style="text-align: left;">Fuerte</td>
+<td style="text-align: left;">Positiva</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ICFSR</td>
+<td style="text-align: right;">-0.28</td>
+<td style="text-align: right;">-0.29</td>
+<td style="text-align: left;">Débil</td>
+<td style="text-align: left;">Negativa</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IRAPE</td>
+<td style="text-align: right;">-0.53</td>
+<td style="text-align: right;">-0.50</td>
+<td style="text-align: left;">Moderada</td>
+<td style="text-align: left;">Negativa</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Índice de Envejecimiento</td>
+<td style="text-align: right;">-0.37</td>
+<td style="text-align: right;">-0.41</td>
+<td style="text-align: left;">Moderada</td>
+<td style="text-align: left;">Negativa</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Cómo leer esta tabla
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El ranking nacional IGVUST (<code>rank_nac</code>) asigna el valor 1 a la comuna más vulnerable del país. Por lo tanto, una correlación <strong>positiva</strong> indica que el índice comparado aumenta junto con la disminución de la vulnerabilidad (comunas menos vulnerables tienen valores más altos de ese índice), mientras que una correlación <strong>negativa</strong> indica lo contrario: el índice aumenta a medida que la vulnerabilidad IGVUST es mayor.</p>
+</div>
+</div>
+<div id="cell-fig-scatter-idh" class="cell">
+<div class="cell-output-display">
+<div id="fig-scatter-idh" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scatter-idh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-scatter-idh-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;1: Relación entre el ranking nacional IGVUST y el Índice de Desarrollo Humano"><img src="index_files/figure-html/fig-scatter-idh-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-idh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Relación entre el ranking nacional IGVUST y el Índice de Desarrollo Humano
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-fig-scatter-icfsr" class="cell">
+<div class="cell-output-display">
+<div id="fig-scatter-icfsr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scatter-icfsr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-scatter-icfsr-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastres (ICFSR)"><img src="index_files/figure-html/fig-scatter-icfsr-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-icfsr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastres (ICFSR)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Los resultados muestran una <strong>relación fuerte y consistente entre el IGVUST y el desarrollo humano</strong> (r = 0.80, ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el <strong>envejecimiento poblacional es moderada</strong> (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Precaución conceptual
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A pesar de la correlación negativa entre envejecimiento y vulnerabilidad, no debemos olvidar lo que presentó Juan Pablo:</p>
+<p>No debe equipararse directamente el envejecimiento con la vulnerabilidad. Un modelo conceptual más adecuado plantea una cadena causal: <strong>envejecimiento → capacidad funcional → dependencia → exposición → condiciones territoriales → vulnerabilidad ante desastres</strong>. La correlación observada en este análisis es, por tanto, una asociación indirecta y no debe interpretarse como causalidad directa.</p>
+</div>
+</div>
+<p>En contraste, la asociación entre el IGVUST y el <strong>riesgo de desastres naturales (ICFSR)</strong> es considerablemente más débil (r = -0.28, ρ = -0.29). Esto indica que la vulnerabilidad socioterritorial y el riesgo de desastres son <strong>dimensiones relativamente independientes</strong>: una comuna puede presentar alta vulnerabilidad social sin necesariamente estar expuesta a un riesgo elevado de desastres, y viceversa — patrón que se observa con claridad en el mapa bivariado presentado a continuación.</p>
+</section>
+<section id="mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres"><span class="header-section-number">2.2</span> Mapa bivariado: vulnerabilidad social y riesgo de desastres</h2>
+<div id="cell-fig-mapa-bivariado" class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-mapa-bivariado" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-bivariado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-mapa-bivariado-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;3: Distribución comunal combinada de vulnerabilidad IGVUST y riesgo de desastres (ICFSR)"><img src="index_files/figure-html/fig-mapa-bivariado-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-bivariado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Distribución comunal combinada de vulnerabilidad IGVUST y riesgo de desastres (ICFSR)
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
-     </main>
-<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
+<section id="interpretación-del-mapa-bivariado" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="interpretación-del-mapa-bivariado"><span class="header-section-number">2.3</span> Interpretación del mapa bivariado</h2>
+<p>El mapa combina en una sola visualización las dos dimensiones exploradas: la vulnerabilidad socioterritorial (IGVUST, eje horizontal) y el riesgo de desastres (ICFSR, eje vertical). Cada uno de los 9 colores representa una combinación distinta de ambos niveles (bajo/medio/alto), y el análisis de la categoría más frecuente por región (<a href="#tbl-bivariada-regional" class="quarto-xref">Table&nbsp;2</a>) permite identificar patrones geográficos concretos más allá de la lectura visual.</p>
+<p>A diferencia de un mapa univariado, donde se esperaría una progresión de color relativamente ordenada, aquí los colores aparecen distribuidos de forma heterogénea a lo largo del territorio. Esto es consistente con la correlación débil (r = -0,28; ρ = -0,29) encontrada entre ambas variables: <strong>la vulnerabilidad social y el riesgo de desastres no siguen el mismo patrón geográfico</strong>, por lo que el mapa combinado muestra un mosaico de categorías antes que una franja continua de un solo color.</p>
+<p><strong>Doble vulnerabilidad: La Araucanía, Ñuble y Los Lagos.</strong> Estas son las únicas regiones cuya categoría más frecuente combina alta vulnerabilidad social y alto riesgo de desastres simultáneamente, concentrando entre el 23% y el 38% de sus comunas en este perfil crítico. Este es el hallazgo más relevante del análisis, ya que no solo son regiones socialmente vulnerables, sino que además presentan mayor exposición física a desastres.</p>
+<p><strong>Antofagasta, Magallanes y Atacama: baja vulnerabilidad social con alto riesgo de desastres.</strong> Este patrón es geográficamente coherente, ya que son zonas de alta exposición física (aluviones y sismicidad en el norte, condiciones climáticas extremas en el extremo sur), pero con indicadores socioeconómicos relativamente favorables, como por ejemplo la actividad minera en el norte.</p>
+<p><strong>Metropolitana de Santiago y Valparaíso: el perfil más favorable en ambas dimensiones.</strong> Un 44,2% de las comunas de la Región Metropolitana y un 21,1% de las de Valparaíso caen en la categoría de menor vulnerabilidad social y menor riesgo de desastres, consistente con su condición de regiones más urbanizadas y con mejor infraestructura del país.</p>
+<p><strong>El resto de las regiones muestra mayor heterogeneidad interna.</strong> Solo cuatro regiones (Antofagasta, Arica y Parinacota, Magallanes y Metropolitana) presentan una categoría verdaderamente dominante, con más del 44% de sus comunas compartiendo el mismo perfil. En el resto del país —incluyendo Los Ríos, Coquimbo, Maule, O’Higgins y Biobío— la categoría más frecuente no supera el 30-42% de las comunas, lo que indica que dentro de estas regiones coexisten comunas con perfiles de riesgo bastante distintos entre sí, sin un patrón regional único que las caracterice.</p>
+<p><strong>Lectura general.</strong> Estos resultados matizan la lectura visual del mapa y confirman cuantitativamente el patrón sugerido por la correlación débil entre ambas variables, la vulnerabilidad social y el riesgo de desastres no coinciden geográficamente en la mayor parte del territorio nacional. La excepción crítica son La Araucanía, Ñuble y Los Lagos, las regiones donde ambas dimensiones de riesgo convergen con mayor frecuencia relativa.</p>
+<div class="cell">
+<div id="tbl-bivariada-regional" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bivariada-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Categoría bivariada más frecuente por región (vulnerabilidad IGVUST y riesgo de desastres ICFSR)
+</figcaption>
+<div aria-describedby="tbl-bivariada-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Region</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Vulnerabilidad</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Riesgo desastres</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">N° comunas</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Total comunas</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">% región</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Antofagasta</td>
+<td style="text-align: left;">Baja</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">55.6%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Arica y Parinacota</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">50.0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Magallanes y de la Antártica Chilena</td>
+<td style="text-align: left;">Baja</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">50.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Metropolitana de Santiago</td>
+<td style="text-align: left;">Baja</td>
+<td style="text-align: left;">Bajo</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">44.2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Los Ríos</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Bajo</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">41.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ñuble</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">38.1%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">La Araucanía</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">37.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Atacama</td>
+<td style="text-align: left;">Baja</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">33.3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Aysén del General Carlos Ibáñez del Campo</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">30.0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tarapacá</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Medio</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">28.6%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Coquimbo</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Medio</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">26.7%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Los Lagos</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">23.3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maule</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">23.3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Libertador General Bernardo O'Higgins</td>
+<td style="text-align: left;">Baja</td>
+<td style="text-align: left;">Medio</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">21.2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Valparaíso</td>
+<td style="text-align: left;">Baja</td>
+<td style="text-align: left;">Bajo</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">21.1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Biobío</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Medio</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">18.2%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Cómo leer esta tabla
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cada fila muestra, para una región, la <strong>categoría bivariada más frecuente</strong> entre sus comunas es decir, la combinación de nivel de vulnerabilidad (IGVUST) y nivel de riesgo de desastres (ICFSR) que más se repite dentro de esa región, junto con cuántas comunas comparten esa combinación respecto del total regional (<code>% región</code>).</p>
+<p>Un <code>% región</code> <strong>alto</strong> (por ejemplo, sobre 44%) indica que la región es relativamente <strong>homogénea</strong>: buena parte de sus comunas comparten el mismo perfil de riesgo. Un <code>% región</code> <strong>bajo</strong> (por ejemplo, bajo 30%) indica una región <strong>heterogénea</strong>, donde ninguna combinación agrupa a una parte importante de las comunas y conviven distintos perfiles dentro del mismo territorio.</p>
+<p>Es importante notar que esta tabla no describe a “toda” la región, sino solo a su categoría más común: incluso en los casos con mayor porcentaje, una parte relevante de las comunas puede pertenecer a otras combinaciones. Además, en regiones con pocas comunas (como Arica y Parinacota, con 4), los porcentajes deben interpretarse con cautela, ya que unas pocas comunas pueden generar valores porcentuales altos sin representar necesariamente un patrón robusto.</p>
+</div>
+</div>
+<p><em>Última actualización: 16 de September de 2026</em></p>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-minsoc_sivust_2025" class="csl-entry" role="listitem">
+Ministerio de Desarrollo Social y Familia. 2025. <em>Informe <span>Metodológico</span>: <span>Sistema</span> de <span>Indicadores</span> de <span>Vulnerabilidad Socioterritorial</span></em>. Subsecretaría de Evaluación Social, Ministerio de Desarrollo Social y Familia, Gobierno de Chile.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -1268,7 +1350,9 @@ Ministerio de Desarrollo Social y Familia. 2025. <em>Informe de <span>Resultados
       }
     }
   });
-  </script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+  </script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
@@ -1299,7 +1383,10 @@ Ministerio de Desarrollo Social y Familia. 2025. <em>Informe de <span>Resultados
   };
   
 })();
-          </script> 
-  
+          </script>
+
+
+
+
 <script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
