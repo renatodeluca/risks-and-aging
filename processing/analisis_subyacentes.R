@@ -1,5 +1,6 @@
 
-#igvust + suby
+# igvust + factores subyacentes del riesgo de desastres
+# Nota: datos ya viene de analisis_igvust.R (sourceado en el qmd)
 
 library(readxl)
 library(dplyr)
@@ -8,20 +9,12 @@ library(janitor)
 library(territorial)
 library(chilemapas)
 library(sf)
-library(ggrepel)
 library(biscale)
 library(cowplot)
 library(scales)
 
+# ---- Cargar factores subyacentes ----
 
-
-# cargar bbdd
-
-# IGVUST
-datos <- read_excel("../input/data-orig/igvust.xlsx") %>%
-  limpiar_regiones(Region)
-
-# Factores subyacentes
 suby <- read_excel("../input/data-orig/fac_suby.xlsx", skip = 1) %>%
   clean_names() %>%
   select(region, comuna, codigo, poblacion_censada,
@@ -30,11 +23,8 @@ suby <- read_excel("../input/data-orig/fac_suby.xlsx", skip = 1) %>%
   rename(cod_com = codigo) %>%
   mutate(indice_envejecimiento = as.numeric(indice_envejecimiento))
 
-# confirmar conversión numérica
-sum(is.na(suby$indice_envejecimiento))
-class(suby$indice_envejecimiento)
+# ---- Unir bases por código comunal ----
 
-# leftjoin por numeros comunales
 datos_completos <- datos %>%
   mutate(cod_com = as.numeric(cod_com)) %>%
   left_join(suby %>% mutate(cod_com = as.numeric(cod_com)),
@@ -43,10 +33,7 @@ datos_completos <- datos %>%
 # verificar cruce
 datos_completos %>% count(is.na(idh))
 
-
-
-# Tabla comparativa de índices por región
-
+# ---- Tabla comparativa de índices por región ----
 
 tabla_regional_comparada <- datos_completos %>%
   group_by(Region) %>%
@@ -60,18 +47,12 @@ tabla_regional_comparada <- datos_completos %>%
   ) %>%
   arrange(prom_c_ig_nac)
 
-print(tabla_regional_comparada)
-
-
-
-
-# scatterplot vulnerabilidad IGVUST vs. otros índices
-
+# ---- Scatterplots: vulnerabilidad IGVUST vs. otros índices ----
 
 # IGVUST (rank_nac) vs IDH
 grafico_idh <- ggplot(datos_completos, aes(x = rank_nac, y = idh)) +
   geom_point(aes(color = c_ig_nac), alpha = 0.7) +
-  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  geom_smooth(method = "lm", se = TRUE, color = "black", linetype = "dashed") +
   scale_color_viridis_c(option = "inferno", direction = -1, name = "Cuartil\nIGVUST") +
   labs(
     title = "Vulnerabilidad IGVUST vs. Desarrollo Humano",
@@ -83,7 +64,7 @@ grafico_idh <- ggplot(datos_completos, aes(x = rank_nac, y = idh)) +
 # IGVUST (rank_nac) vs riesgo de desastres (ICFSR)
 grafico_icfsr <- ggplot(datos_completos, aes(x = rank_nac, y = icfsr)) +
   geom_point(aes(color = c_ig_nac), alpha = 0.7) +
-  geom_smooth(method = "lm", se = FALSE, color = "black", linetype = "dashed") +
+  geom_smooth(method = "lm", se = TRUE, color = "black", linetype = "dashed") +
   scale_color_viridis_c(option = "inferno", direction = -1, name = "Cuartil\nIGVUST") +
   labs(
     title = "Vulnerabilidad IGVUST vs. Riesgo de Desastres (ICFSR)",
@@ -92,16 +73,13 @@ grafico_icfsr <- ggplot(datos_completos, aes(x = rank_nac, y = icfsr)) +
   ) +
   theme_minimal()
 
-grafico_idh
-grafico_icfsr
+# ---- Correlaciones (Spearman: rank_nac es ordinal) ----
 
-# correlaciones (Spearman: rank_nac es ordinal)
 cor_idh <- cor(datos_completos$rank_nac, datos_completos$idh, use = "complete.obs", method = "spearman")
 cor_icfsr <- cor(datos_completos$rank_nac, datos_completos$icfsr, use = "complete.obs", method = "spearman")
 cor_irape <- cor(datos_completos$rank_nac, datos_completos$irape, use = "complete.obs", method = "spearman")
 cor_envej <- cor(datos_completos$rank_nac, datos_completos$indice_envejecimiento, use = "complete.obs", method = "spearman")
 
-# función auxiliar para clasificar fuerza y dirección
 clasificar_cor <- function(r) {
   fuerza <- case_when(
     abs(r) >= 0.7 ~ "Fuerte",
@@ -113,7 +91,6 @@ clasificar_cor <- function(r) {
   tibble(Fuerza = fuerza, Direccion = direccion)
 }
 
-# tabla de correlaciones (Spearman)
 dirigor_idh <- clasificar_cor(cor_idh)
 dirigor_icfsr <- clasificar_cor(cor_icfsr)
 dirigor_irape <- clasificar_cor(cor_irape)
@@ -126,12 +103,7 @@ tabla_correlaciones <- tibble::tibble(
   Direccion = c(dirigor_idh$Direccion, dirigor_icfsr$Direccion, dirigor_irape$Direccion, dirigor_envej$Direccion)
 )
 
-print(tabla_correlaciones)
-
-
-
-# bivariado IGVUST + riesgo de desastres (ICFSR)
-
+# ---- Mapa bivariado IGVUST + ICFSR ----
 
 datos_mapa <- datos_completos %>%
   mutate(codigo_comuna = sprintf("%05d", as.numeric(cod_com)))
@@ -140,7 +112,6 @@ mapa_comunal_biv <- chilemapas::mapa_comunas |>
   st_as_sf() |>
   left_join(datos_mapa, by = "codigo_comuna")
 
-# clasificar en biclases (3x3): vulnerabilidad IGVUST vs riesgo ICFSR
 mapa_biv <- bi_class(mapa_comunal_biv,
                       x = rank_nac, y = icfsr,
                       style = "quantile", dim = 3)
@@ -157,32 +128,23 @@ leyenda_bivariada <- bi_legend(pal = "DkBlue2",
                                 ylab = "Mayor riesgo (ICFSR) →",
                                 size = 7)
 
-# combinar mapa + leyenda
 ggdraw() +
   draw_plot(mapa_bivariado, 0, 0, 1, 1) +
   draw_plot(leyenda_bivariada, 0.05, 0.05, 0.25, 0.25)
 
-
-
- # doble vulnerabilidad (IGVUST + ICFSR)
-
+# ---- Índice de doble vulnerabilidad (IGVUST + ICFSR) ----
 
 ranking_combinado <- datos_completos %>%
   filter(!is.na(rank_nac), !is.na(icfsr)) %>%
   mutate(
-    percentil_igvust = percent_rank(desc(rank_nac)),  # rank 1 = más vulnerable → percentil ~1
-    percentil_icfsr = percent_rank(icfsr),            # icfsr alto = mayor riesgo → percentil ~1
+    percentil_igvust = percent_rank(desc(rank_nac)),
+    percentil_icfsr = percent_rank(icfsr),
     indice_doble_vulnerabilidad = (percentil_igvust + percentil_icfsr) / 2
   ) %>%
-  arrange(desc(indice_doble_vulnerabilidad)) %>%  # mayor índice = doblemente vulnerable
+  arrange(desc(indice_doble_vulnerabilidad)) %>%
   select(Comuna, Region, rank_nac, icfsr, indice_doble_vulnerabilidad)
 
-head(ranking_combinado, 15)
-
-
-
-# Vulnerabilidad IGVUST según envejecimiento
-
+# ---- Vulnerabilidad IGVUST según envejecimiento ----
 
 grafico_envejecimiento <- ggplot(datos_completos, aes(x = factor(c_ig_nac), y = indice_envejecimiento)) +
   geom_boxplot(aes(fill = factor(c_ig_nac)), alpha = 0.7) +
@@ -195,22 +157,18 @@ grafico_envejecimiento <- ggplot(datos_completos, aes(x = factor(c_ig_nac), y = 
   ) +
   theme_minimal()
 
-grafico_envejecimiento
-
 # tabla resumen
 datos_completos %>%
   filter(!is.na(indice_envejecimiento)) %>%
   group_by(c_ig_nac) %>%
   summarise(
     n_comunas = n(),
-    envejecimiento_prom = mean(indice_envejecimiento),
-    envejecimiento_mediana = median(indice_envejecimiento),
+    envejecimiento_prom = mean(indice_envejecimiento, na.rm = TRUE),
+    envejecimiento_mediana = median(indice_envejecimiento, na.rm = TRUE),
     .groups = "drop"
   )
 
-
-
-# comunas donde los índices no calzan
+# ---- Comunas donde los índices no calzan ----
 
 # alta vulnerabilidad IGVUST (cuartil 1) pero bajo riesgo de desastres
 caso_a <- datos_completos %>%
@@ -226,18 +184,14 @@ caso_b <- datos_completos %>%
   slice_head(n = 5) %>%
   select(Comuna, Region, c_ig_nac, icfsr, idh)
 
-caso_a  # vulnerables socialmente, bajo riesgo de desastres
-caso_b  # buen IGVUST, pero alto riesgo de desastres (ej. costeras/volcánicas)
+# ---- Comunas sin IDH (sin match en factores subyacentes) ----
 
-
-
-# cuántas comunas quedan sin IDH 
 datos_completos %>%
   filter(is.na(idh)) %>%
   select(Comuna, Region, cod_com, poblacion_censada)
 
+# ---- Tabla bivariada para qmd ----
 
-# tabla bivariada para qmd
 tabla_bivariada_regional <- mapa_biv %>%
   sf::st_drop_geometry() %>%
   count(Region, bi_class) %>%
