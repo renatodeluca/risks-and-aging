@@ -27,11 +27,6 @@ regiones_vulnerabilidad <- datos %>%
   rename(codigo_region = cod_reg) %>%
   arrange(desc(prop_comunas_q1))  # el más alto = región más vulnerable
 
-# nueva variable tipo factor según vulnerabilidad
-datos$Region_vulnerabilidad <- factor(datos$Region,
-                                       levels = regiones_vulnerabilidad$Region,
-                                       ordered = TRUE)
-
 print(regiones_vulnerabilidad)
 
 # región más vulnerable:
@@ -85,7 +80,6 @@ mapa_comunal <- chilemapas::mapa_comunas %>%
   st_as_sf() %>%
   left_join(
     datos %>% 
-      st_drop_geometry() %>%
       mutate(cod_com = sprintf("%05d", cod_com)),
     by = c("codigo_comuna" = "cod_com")
   )
@@ -98,17 +92,18 @@ graficar_region <- function(nombre_region) {
 
   mapa_region_actual <- mapa_comunal %>%
     filter(Region == nombre_region) %>%
-    mutate(c_ig_nac_factor = factor(as.character(as.integer(c_ig_nac)),
-                                     levels = c("1", "2", "3")))
+  mutate(c_ig_nac_factor = factor(as.character(as.integer(c_ig_nac)),
+                                   levels = c("1", "2", "3", "4")))
 
   ggplot(mapa_region_actual) +
     geom_sf(aes(fill = c_ig_nac_factor), color = "white", linewidth = 0.15) +
     scale_fill_manual(
       values = c("1" = "#7A0403",
                  "2" = "#E85D04",
-                 "3" = "#FFC300"),
+                 "3" = "#FFC300",
+                 "4" = "#2A9D8F"),
       name = "Cuartil",
-      labels = c("1", "2", "3"),
+      labels = c("1", "2", "3", "4"),
       na.value = "grey90",
       drop = FALSE
     ) +

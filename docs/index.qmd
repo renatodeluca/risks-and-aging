@@ -126,17 +126,9 @@ Para complementar el análisis del IGVUST, se incorporó la base de **Factores S
 #| warning: false
 #| label: tbl-correlaciones
 
-tabla_correlaciones <- tibble::tibble(
-  Índice = c("IDH", "ICFSR", "IRAPE", "Índice de Envejecimiento"),
-  Pearson = c(0.80, -0.28, -0.53, -0.37),
-  Spearman = c(0.83, -0.29, -0.50, -0.41),
-  Fuerza = c("Fuerte", "Débil", "Moderada", "Moderada"),
-  Dirección = c("Positiva", "Negativa", "Negativa", "Negativa")
-)
-
 tabla_correlaciones %>%
   knitr::kable(
-    caption = "Correlación entre el ranking nacional IGVUST y otros índices comunales",
+    caption = "Correlación entre el ranking nacional IGVUST y otros índices comunales (Spearman)",
     digits = 2,
     format = "html"
   )
@@ -145,7 +137,9 @@ tabla_correlaciones %>%
 ::: {.callout-note}
 ## Cómo leer esta tabla
 
-El ranking nacional IGVUST (`rank_nac`) asigna el valor 1 a la comuna más vulnerable del país. Por lo tanto, una correlación **positiva** indica que el índice comparado aumenta junto con la disminución de la vulnerabilidad (comunas menos vulnerables tienen valores más altos de ese índice), mientras que una correlación **negativa** indica lo contrario: el índice aumenta a medida que la vulnerabilidad IGVUST es mayor.
+El ranking nacional IGVUST (`rank_nac`) asigna el valor 1 a la comuna más vulnerable del país. Por lo tanto, una correlación **negativa** con `rank_nac` indica que el índice comparado aumenta a medida que la vulnerabilidad IGVUST es mayor (comunas más vulnerables tienen valores más altos de ese índice), mientras que una correlación **positiva** indica lo contrario: el índice aumenta junto con la disminución de la vulnerabilidad (comunas menos vulnerables tienen valores más altos de ese índice).
+
+Ejemplo: una correlación de Spearman = -0.41 con el índice de envejecimiento significa que las comunas más vulnerables (rank bajo) tienden a tener mayor envejecimiento poblacional.
 :::
 
 ```{r}
@@ -166,7 +160,7 @@ grafico_idh
 grafico_icfsr
 ```
 
-Los resultados muestran una **relación fuerte y consistente entre el IGVUST y el desarrollo humano** (r = 0.80, ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el **envejecimiento poblacional es moderada** (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.
+Los resultados muestran una **relación fuerte y consistente entre el IGVUST y el desarrollo humano** (ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el **envejecimiento poblacional es moderada** (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.
 
 ::: {.callout-warning}
 ## Precaución conceptual
@@ -176,7 +170,7 @@ No debe equipararse directamente el envejecimiento con la vulnerabilidad. Un mod
 
 :::
 
-En contraste, la asociación entre el IGVUST y el **riesgo de desastres naturales (ICFSR)** es considerablemente más débil (r = -0.28, ρ = -0.29). Esto indica que la vulnerabilidad socioterritorial y el riesgo de desastres son **dimensiones relativamente independientes**: una comuna puede presentar alta vulnerabilidad social sin necesariamente estar expuesta a un riesgo elevado de desastres, y viceversa — patrón que se observa con claridad en el mapa bivariado presentado a continuación.
+En contraste, la asociación entre el IGVUST y el **riesgo de desastres naturales (ICFSR)** es considerablemente más débil (ρ = -0.29). Esto indica que la vulnerabilidad socioterritorial y el riesgo de desastres son **dimensiones relativamente independientes**: una comuna puede presentar alta vulnerabilidad social sin necesariamente estar expuesta a un riesgo elevado de desastres, y viceversa — patrón que se observa con claridad en el mapa bivariado presentado a continuación.
 
 ## Mapa bivariado: vulnerabilidad social y riesgo de desastres
 
@@ -221,7 +215,7 @@ mapa_bivariado + leyenda_bivariada +
 
 El mapa combina en una sola visualización las dos dimensiones exploradas: la vulnerabilidad socioterritorial (IGVUST, eje horizontal) y el riesgo de desastres (ICFSR, eje vertical). Cada uno de los 9 colores representa una combinación distinta de ambos niveles (bajo/medio/alto), y el análisis de la categoría más frecuente por región (@tbl-bivariada-regional) permite identificar patrones geográficos concretos más allá de la lectura visual.
 
-A diferencia de un mapa univariado, donde se esperaría una progresión de color relativamente ordenada, aquí los colores aparecen distribuidos de forma heterogénea a lo largo del territorio. Esto es consistente con la correlación débil (r = -0,28; ρ = -0,29) encontrada entre ambas variables: **la vulnerabilidad social y el riesgo de desastres no siguen el mismo patrón geográfico**, por lo que el mapa combinado muestra un mosaico de categorías antes que una franja continua de un solo color.
+A diferencia de un mapa univariado, donde se esperaría una progresión de color relativamente ordenada, aquí los colores aparecen distribuidos de forma heterogénea a lo largo del territorio. Esto es consistente con la correlación débil (ρ = -0.29) encontrada entre ambas variables: **la vulnerabilidad social y el riesgo de desastres no siguen el mismo patrón geográfico**, por lo que el mapa combinado muestra un mosaico de categorías antes que una franja continua de un solo color.
 
 **Doble vulnerabilidad: La Araucanía, Ñuble y Los Lagos.** Estas son las únicas regiones cuya categoría más frecuente combina alta vulnerabilidad social y alto riesgo de desastres simultáneamente, concentrando entre el 23% y el 38% de sus comunas en este perfil crítico. Este es el hallazgo más relevante del análisis, ya que no solo son regiones socialmente vulnerables, sino que además presentan mayor exposición física a desastres.
 

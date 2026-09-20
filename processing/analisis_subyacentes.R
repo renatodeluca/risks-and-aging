@@ -15,7 +15,7 @@ library(scales)
 
 
 
-# ---- Cargar bases ----
+# cargar bbdd
 
 # IGVUST
 datos <- read_excel("../input/data-orig/igvust.xlsx") %>%
@@ -34,7 +34,7 @@ suby <- read_excel("../input/data-orig/fac_suby.xlsx", skip = 1) %>%
 sum(is.na(suby$indice_envejecimiento))
 class(suby$indice_envejecimiento)
 
-# ---- Unir bases por código comunal ----
+# leftjoin por numeros comunales
 datos_completos <- datos %>%
   mutate(cod_com = as.numeric(cod_com)) %>%
   left_join(suby %>% mutate(cod_com = as.numeric(cod_com)),
@@ -95,11 +95,38 @@ grafico_icfsr <- ggplot(datos_completos, aes(x = rank_nac, y = icfsr)) +
 grafico_idh
 grafico_icfsr
 
-# correlaciones
-cor(datos_completos$rank_nac, datos_completos$idh, use = "complete.obs")
-cor(datos_completos$rank_nac, datos_completos$icfsr, use = "complete.obs")
-cor(datos_completos$rank_nac, datos_completos$irape, use = "complete.obs")
-cor(datos_completos$rank_nac, datos_completos$indice_envejecimiento, use = "complete.obs")
+# correlaciones (Spearman: rank_nac es ordinal)
+cor_idh <- cor(datos_completos$rank_nac, datos_completos$idh, use = "complete.obs", method = "spearman")
+cor_icfsr <- cor(datos_completos$rank_nac, datos_completos$icfsr, use = "complete.obs", method = "spearman")
+cor_irape <- cor(datos_completos$rank_nac, datos_completos$irape, use = "complete.obs", method = "spearman")
+cor_envej <- cor(datos_completos$rank_nac, datos_completos$indice_envejecimiento, use = "complete.obs", method = "spearman")
+
+# función auxiliar para clasificar fuerza y dirección
+clasificar_cor <- function(r) {
+  fuerza <- case_when(
+    abs(r) >= 0.7 ~ "Fuerte",
+    abs(r) >= 0.4 ~ "Moderada",
+    abs(r) >= 0.2 ~ "Débil",
+    TRUE ~ "Muy débil"
+  )
+  direccion <- ifelse(r > 0, "Positiva", "Negativa")
+  tibble(Fuerza = fuerza, Direccion = direccion)
+}
+
+# tabla de correlaciones (Spearman)
+dirigor_idh <- clasificar_cor(cor_idh)
+dirigor_icfsr <- clasificar_cor(cor_icfsr)
+dirigor_irape <- clasificar_cor(cor_irape)
+dirigor_envej <- clasificar_cor(cor_envej)
+
+tabla_correlaciones <- tibble::tibble(
+  Indice = c("IDH", "ICFSR", "IRAPE", "Indice de Envejecimiento"),
+  Spearman = round(c(cor_idh, cor_icfsr, cor_irape, cor_envej), 2),
+  Fuerza = c(dirigor_idh$Fuerza, dirigor_icfsr$Fuerza, dirigor_irape$Fuerza, dirigor_envej$Fuerza),
+  Direccion = c(dirigor_idh$Direccion, dirigor_icfsr$Direccion, dirigor_irape$Direccion, dirigor_envej$Direccion)
+)
+
+print(tabla_correlaciones)
 
 
 
@@ -143,11 +170,11 @@ ggdraw() +
 ranking_combinado <- datos_completos %>%
   filter(!is.na(rank_nac), !is.na(icfsr)) %>%
   mutate(
-    percentil_igvust = percent_rank(rank_nac),      # cerca de 0 = más vulnerable (rank 1 es el peor)
-    percentil_icfsr = percent_rank(desc(icfsr)),     # invertido para que cerca de 0 = mayor riesgo
+    percentil_igvust = percent_rank(desc(rank_nac)),  # rank 1 = más vulnerable → percentil ~1
+    percentil_icfsr = percent_rank(icfsr),            # icfsr alto = mayor riesgo → percentil ~1
     indice_doble_vulnerabilidad = (percentil_igvust + percentil_icfsr) / 2
   ) %>%
-  arrange(indice_doble_vulnerabilidad) %>%
+  arrange(desc(indice_doble_vulnerabilidad)) %>%  # mayor índice = doblemente vulnerable
   select(Comuna, Region, rank_nac, icfsr, indice_doble_vulnerabilidad)
 
 head(ranking_combinado, 15)
@@ -172,10 +199,12 @@ grafico_envejecimiento
 
 # tabla resumen
 datos_completos %>%
+  filter(!is.na(indice_envejecimiento)) %>%
   group_by(c_ig_nac) %>%
   summarise(
-    envejecimiento_prom = mean(indice_envejecimiento, na.rm = TRUE),
-    envejecimiento_mediana = median(indice_envejecimiento, na.rm = TRUE),
+    n_comunas = n(),
+    envejecimiento_prom = mean(indice_envejecimiento),
+    envejecimiento_mediana = median(indice_envejecimiento),
     .groups = "drop"
   )
 
@@ -202,22 +231,13 @@ caso_b  # buen IGVUST, pero alto riesgo de desastres (ej. costeras/volcánicas)
 
 
 
-cor(datos_completos$rank_nac, datos_completos$idh, use = "complete.obs", method = "spearman")
-cor(datos_completos$rank_nac, datos_completos$icfsr, use = "complete.obs", method = "spearman")
-cor(datos_completos$rank_nac, datos_completos$irape, use = "complete.obs", method = "spearman")
-cor(datos_completos$rank_nac, datos_completos$indice_envejecimiento, use = "complete.obs", method = "spearman")
-
-
 # cuántas comunas quedan sin IDH 
 datos_completos %>%
   filter(is.na(idh)) %>%
   select(Comuna, Region, cod_com, poblacion_censada)
 
-cor(datos_completos$rank_nac, datos_completos$indice_envejecimiento, use = "complete.obs", method = "pearson")
-
 
 # tabla bivariada para qmd
-
 tabla_bivariada_regional <- mapa_biv %>%
   sf::st_drop_geometry() %>%
   count(Region, bi_class) %>%

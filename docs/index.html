@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-09-16">
+<meta name="dcterms.date" content="2026-09-19">
 
 <title>Vulnerabilidad Socioterritorial en Chile</title>
 <style>
@@ -91,10 +91,10 @@ div.csl-indent {
 
 <meta name="citation_title" content="Vulnerabilidad Socioterritorial en Chile">
 <meta name="citation_author" content="Renato De Luca">
-<meta name="citation_publication_date" content="2026-09-16">
-<meta name="citation_cover_date" content="2026-09-16">
+<meta name="citation_publication_date" content="2026-09-19">
+<meta name="citation_cover_date" content="2026-09-19">
 <meta name="citation_year" content="2026">
-<meta name="citation_online_date" content="2026-09-16">
+<meta name="citation_online_date" content="2026-09-19">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=From mandates to mechanisms: Institutional vulnerability, decentralized governance, and the challenges of local disaster risk reduction implementation;,citation_author=I. Alcántara-Ayala;,citation_author=et al.;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_journal_title=International Journal of Disaster Risk Science;">
 <meta name="citation_reference" content="citation_title=Los adultos mayores y las catástrofes: Preparación y respuesta;,citation_author=American Association for Geriatric Psychiatry [AAGP];,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;">
@@ -333,7 +333,7 @@ div.csl-indent {
                 <div>
             <div class="quarto-title-meta-heading">Published</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">September 16, 2026</p>
+              <p class="date">September 19, 2026</p>
             </div>
           </div>
           
@@ -623,45 +623,40 @@ div.csl-indent {
 <div id="tbl-correlaciones" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-correlaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices comunales
+Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices comunales (Spearman)
 </figcaption>
 <div aria-describedby="tbl-correlaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Índice</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Pearson</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Indice</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">Spearman</th>
 <th style="text-align: left;" data-quarto-table-cell-role="th">Fuerza</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Dirección</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Direccion</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">IDH</td>
-<td style="text-align: right;">0.80</td>
 <td style="text-align: right;">0.83</td>
 <td style="text-align: left;">Fuerte</td>
 <td style="text-align: left;">Positiva</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">ICFSR</td>
-<td style="text-align: right;">-0.28</td>
 <td style="text-align: right;">-0.29</td>
 <td style="text-align: left;">Débil</td>
 <td style="text-align: left;">Negativa</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">IRAPE</td>
-<td style="text-align: right;">-0.53</td>
 <td style="text-align: right;">-0.50</td>
 <td style="text-align: left;">Moderada</td>
 <td style="text-align: left;">Negativa</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Índice de Envejecimiento</td>
-<td style="text-align: right;">-0.37</td>
+<td style="text-align: left;">Indice de Envejecimiento</td>
 <td style="text-align: right;">-0.41</td>
 <td style="text-align: left;">Moderada</td>
 <td style="text-align: left;">Negativa</td>
@@ -683,7 +678,8 @@ Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices com
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El ranking nacional IGVUST (<code>rank_nac</code>) asigna el valor 1 a la comuna más vulnerable del país. Por lo tanto, una correlación <strong>positiva</strong> indica que el índice comparado aumenta junto con la disminución de la vulnerabilidad (comunas menos vulnerables tienen valores más altos de ese índice), mientras que una correlación <strong>negativa</strong> indica lo contrario: el índice aumenta a medida que la vulnerabilidad IGVUST es mayor.</p>
+<p>El ranking nacional IGVUST (<code>rank_nac</code>) asigna el valor 1 a la comuna más vulnerable del país. Por lo tanto, una correlación <strong>negativa</strong> con <code>rank_nac</code> indica que el índice comparado aumenta a medida que la vulnerabilidad IGVUST es mayor (comunas más vulnerables tienen valores más altos de ese índice), mientras que una correlación <strong>positiva</strong> indica lo contrario: el índice aumenta junto con la disminución de la vulnerabilidad (comunas menos vulnerables tienen valores más altos de ese índice).</p>
+<p>Ejemplo: una correlación de Spearman = -0.41 con el índice de envejecimiento significa que las comunas más vulnerables (rank bajo) tienden a tener mayor envejecimiento poblacional.</p>
 </div>
 </div>
 <div id="cell-fig-scatter-idh" class="cell">
@@ -714,7 +710,7 @@ Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastr
 </div>
 </div>
 </div>
-<p>Los resultados muestran una <strong>relación fuerte y consistente entre el IGVUST y el desarrollo humano</strong> (r = 0.80, ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el <strong>envejecimiento poblacional es moderada</strong> (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.</p>
+<p>Los resultados muestran una <strong>relación fuerte y consistente entre el IGVUST y el desarrollo humano</strong> (ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el <strong>envejecimiento poblacional es moderada</strong> (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -729,7 +725,7 @@ Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastr
 <p>No debe equipararse directamente el envejecimiento con la vulnerabilidad. Un modelo conceptual más adecuado plantea una cadena causal: <strong>envejecimiento → capacidad funcional → dependencia → exposición → condiciones territoriales → vulnerabilidad ante desastres</strong>. La correlación observada en este análisis es, por tanto, una asociación indirecta y no debe interpretarse como causalidad directa.</p>
 </div>
 </div>
-<p>En contraste, la asociación entre el IGVUST y el <strong>riesgo de desastres naturales (ICFSR)</strong> es considerablemente más débil (r = -0.28, ρ = -0.29). Esto indica que la vulnerabilidad socioterritorial y el riesgo de desastres son <strong>dimensiones relativamente independientes</strong>: una comuna puede presentar alta vulnerabilidad social sin necesariamente estar expuesta a un riesgo elevado de desastres, y viceversa — patrón que se observa con claridad en el mapa bivariado presentado a continuación.</p>
+<p>En contraste, la asociación entre el IGVUST y el <strong>riesgo de desastres naturales (ICFSR)</strong> es considerablemente más débil (ρ = -0.29). Esto indica que la vulnerabilidad socioterritorial y el riesgo de desastres son <strong>dimensiones relativamente independientes</strong>: una comuna puede presentar alta vulnerabilidad social sin necesariamente estar expuesta a un riesgo elevado de desastres, y viceversa — patrón que se observa con claridad en el mapa bivariado presentado a continuación.</p>
 </section>
 <section id="mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres"><span class="header-section-number">2.2</span> Mapa bivariado: vulnerabilidad social y riesgo de desastres</h2>
@@ -751,7 +747,7 @@ Figure&nbsp;3: Distribución comunal combinada de vulnerabilidad IGVUST y riesgo
 <section id="interpretación-del-mapa-bivariado" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="interpretación-del-mapa-bivariado"><span class="header-section-number">2.3</span> Interpretación del mapa bivariado</h2>
 <p>El mapa combina en una sola visualización las dos dimensiones exploradas: la vulnerabilidad socioterritorial (IGVUST, eje horizontal) y el riesgo de desastres (ICFSR, eje vertical). Cada uno de los 9 colores representa una combinación distinta de ambos niveles (bajo/medio/alto), y el análisis de la categoría más frecuente por región (<a href="#tbl-bivariada-regional" class="quarto-xref">Table&nbsp;2</a>) permite identificar patrones geográficos concretos más allá de la lectura visual.</p>
-<p>A diferencia de un mapa univariado, donde se esperaría una progresión de color relativamente ordenada, aquí los colores aparecen distribuidos de forma heterogénea a lo largo del territorio. Esto es consistente con la correlación débil (r = -0,28; ρ = -0,29) encontrada entre ambas variables: <strong>la vulnerabilidad social y el riesgo de desastres no siguen el mismo patrón geográfico</strong>, por lo que el mapa combinado muestra un mosaico de categorías antes que una franja continua de un solo color.</p>
+<p>A diferencia de un mapa univariado, donde se esperaría una progresión de color relativamente ordenada, aquí los colores aparecen distribuidos de forma heterogénea a lo largo del territorio. Esto es consistente con la correlación débil (ρ = -0.29) encontrada entre ambas variables: <strong>la vulnerabilidad social y el riesgo de desastres no siguen el mismo patrón geográfico</strong>, por lo que el mapa combinado muestra un mosaico de categorías antes que una franja continua de un solo color.</p>
 <p><strong>Doble vulnerabilidad: La Araucanía, Ñuble y Los Lagos.</strong> Estas son las únicas regiones cuya categoría más frecuente combina alta vulnerabilidad social y alto riesgo de desastres simultáneamente, concentrando entre el 23% y el 38% de sus comunas en este perfil crítico. Este es el hallazgo más relevante del análisis, ya que no solo son regiones socialmente vulnerables, sino que además presentan mayor exposición física a desastres.</p>
 <p><strong>Antofagasta, Magallanes y Atacama: baja vulnerabilidad social con alto riesgo de desastres.</strong> Este patrón es geográficamente coherente, ya que son zonas de alta exposición física (aluviones y sismicidad en el norte, condiciones climáticas extremas en el extremo sur), pero con indicadores socioeconómicos relativamente favorables, como por ejemplo la actividad minera en el norte.</p>
 <p><strong>Metropolitana de Santiago y Valparaíso: el perfil más favorable en ambas dimensiones.</strong> Un 44,2% de las comunas de la Región Metropolitana y un 21,1% de las de Valparaíso caen en la categoría de menor vulnerabilidad social y menor riesgo de desastres, consistente con su condición de regiones más urbanizadas y con mejor infraestructura del país.</p>
@@ -927,7 +923,7 @@ Table&nbsp;2: Categoría bivariada más frecuente por región (vulnerabilidad IG
 <p>Es importante notar que esta tabla no describe a “toda” la región, sino solo a su categoría más común: incluso en los casos con mayor porcentaje, una parte relevante de las comunas puede pertenecer a otras combinaciones. Además, en regiones con pocas comunas (como Arica y Parinacota, con 4), los porcentajes deben interpretarse con cautela, ya que unas pocas comunas pueden generar valores porcentuales altos sin representar necesariamente un patrón robusto.</p>
 </div>
 </div>
-<p><em>Última actualización: 16 de September de 2026</em></p>
+<p><em>Última actualización: 19 de September de 2026</em></p>
 
 </section>
 </section>
