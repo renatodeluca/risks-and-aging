@@ -1,51 +1,175 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.9.37">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="dcterms.date" content="2026-09-23">
 
-<meta name="dcterms.date" content="2026-09-23">
+    <title>Vulnerabilidad Socioterritorial en Chile</title>
+    <style>
+      /* Default styles provided by pandoc.
+      ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+      */
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      html { -webkit-text-size-adjust: 100%; }
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
 
-<title>Vulnerabilidad Socioterritorial en Chile</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
 
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
 
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -64,14 +188,12 @@ div.csl-indent {
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<style>html{ scroll-behavior: smooth; }</style>
-<script async="" src="https://hypothes.is/embed.js"></script>
+     <style>html{ scroll-behavior: smooth; }</style>  <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>
-<style>
+</script>  <style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -86,10 +208,8 @@ div.csl-indent {
       .quarto-title-block .quarto-title-banner {
         color: #6e4416;
       }
-</style>
-
-
-<meta name="citation_title" content="Vulnerabilidad Socioterritorial en Chile">
+</style>  
+      <meta name="citation_title" content="Vulnerabilidad Socioterritorial en Chile">
 <meta name="citation_author" content="Renato De Luca">
 <meta name="citation_publication_date" content="2026-09-23">
 <meta name="citation_cover_date" content="2026-09-23">
@@ -139,7 +259,7 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=How does social capital facilitate community disaster resilience? A systematic review;,citation_author=G. Zhao;,citation_author=et al.;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_journal_title=Frontiers in Environmental Science;">
 </head>
 
-<body class="quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+  <body class="quarto-notebook quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -302,8 +422,15 @@ div.csl-indent {
       toggleColorMode(false);
     }
   </script>
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+            <a href="./index.qmd" class="btn btn-primary quarto-download-embed" download="index.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Vulnerabilidad Socioterritorial en Chile</h1>
@@ -370,18 +497,136 @@ div.csl-indent {
   </ul></li>
   <li><a href="#resumen-descriptivo-de-variables" id="toc-resumen-descriptivo-de-variables" class="nav-link" data-scroll-target="#resumen-descriptivo-de-variables"><span class="header-section-number">3</span> Resumen Descriptivo de Variables</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">        
+
+       <div class="cell-container code-fold"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../processing/analisis_igvust.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: sf</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.13.0, GDAL 3.8.5, PROJ 9.5.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>La documentacion del paquete y ejemplos de uso se encuentran en https://pacha.dev/chilemapas/.
+Visita https://buymeacoffee.com/pacha/ si deseas donar para contribuir al desarrollo de este software.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ forcats   1.0.1     ✔ readr     2.2.0
+✔ ggplot2   4.0.3     ✔ stringr   1.6.0
+✔ lubridate 1.9.5     ✔ tibble    3.3.1
+✔ purrr     1.2.2     ✔ tidyr     1.3.2
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+New names:
+ℹ Limpiando 346 nombres de región (17 son distintos)
+
+→ Paso 1: confirmar regiones correctas
+
+ℹ De las 17 regiones distintas, ninguna tiene nombres 100% correctos. Los siguientes pasos intentarán la limpieza
+
+→ Paso 2: coincidencias por limpieza de texto
+
+ℹ A partir de la limpieza de texto, se limpiaron 17 de 17 regiones: Arica y Parinacota, Tarapacá, Antofagasta, Atacama, Coquimbo, Valparaíso, Metropolitana de Santiago, Libertador General Bernardo O'Higgins, Maule, Ñuble, Biobío, La Araucanía, Los Ríos, Los Lagos, Aysén del General Carlos Ibáñez del Campo y Magallanes y de la Antártica Chilena
+
+→ Paso 3: casos especiales
+
+ℹ Se encontraron 3 casos especiales: Biobío, Aysén del General Carlos Ibáñez del Campo y Magallanes y de la Antártica Chilena
+
+→ Paso 4: coincidencias aproximadas de texto
+
+! No se limpiaron regiones como parte de este paso
+
+→ Conclusión de limpieza de regiones
+
+✔ De las 17 regiones distintas, se limpiaron 17 en total (100%)</code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../processing/analisis_subyacentes.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'janitor'
+
+The following objects are masked from 'package:stats':
+
+    chisq.test, fisher.test
 
 
+Attaching package: 'cowplot'
+
+The following object is masked from 'package:lubridate':
+
+    stamp
+
+The following object is masked from 'package:patchwork':
+
+    align_plots
 
 
-  
+Attaching package: 'scales'
 
+The following object is masked from 'package:purrr':
 
+    discard
+
+The following object is masked from 'package:readr':
+
+    col_factor</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in fun(libname, pkgname): no display name and no $DISPLAY environment
+variable</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>system might not have X11 capabilities; in case of errors when using dfSummary(), set st_options(use.x11 = FALSE)
+
+Attaching package: 'summarytools'
+
+The following object is masked from 'package:tibble':
+
+    view
+
+New names:</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There was 1 warning in `mutate()`.
+ℹ In argument: `indice_envejecimiento = as.numeric(indice_envejecimiento)`.
+Caused by warning:
+! NAs introduced by coercion</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There was 1 warning in `mutate()`.
+ℹ In argument: `cod_com = as.numeric(cod_com)`.
+Caused by warning:
+! NAs introduced by coercion</code></pre>
+</div>
+</div></div>
 <section id="análisis-igvust" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Análisis IGVUST</h1>
 <section id="cómo-se-construye-el-igvust" class="level2" data-number="1.1">
@@ -399,15 +644,19 @@ div.csl-indent {
 </section>
 <section id="mapa-nacional" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="mapa-nacional"><span class="header-section-number">1.2</span> Mapa Nacional</h2>
-<div class="cell">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>grafico_mapa_nacional</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
-<div>
+<div class="">
 <figure class="figure">
-<p><a href="index_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
+<p class=""><a href="index_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html">Source: Article Notebook</a></div>
+</div></div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -424,15 +673,21 @@ div.csl-indent {
 </section>
 <section id="las-3-regiones-más-vulnerables" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="las-3-regiones-más-vulnerables"><span class="header-section-number">1.3</span> Las 3 Regiones Más Vulnerables</h2>
-<div class="cell">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>patchwork<span class="sc">::</span><span class="fu">wrap_plots</span>(mapas_top3, <span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  patchwork<span class="sc">::</span><span class="fu">plot_annotation</span>(<span class="at">title =</span> <span class="st">"Las 3 comunas más vulnerables de Chile"</span>,</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">subtitle =</span> <span class="st">"Según ranking nacional (rank_nac) del IGVUST"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
-<div>
+<div class="">
 <figure class="figure">
-<p><a href="index_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></a></p>
+<p class=""><a href="index_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></a></p>
 </figure>
 </div>
 </div>
-</div>
+</div></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -449,7 +704,19 @@ div.csl-indent {
 </section>
 <section id="descriptivos-por-región" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="descriptivos-por-región"><span class="header-section-number">1.4</span> Descriptivos por Región</h2>
-<div class="cell">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>regiones_vulnerabilidad <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.numeric), <span class="sc">~</span><span class="fu">round</span>(., <span class="dv">3</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(prop_comunas_q1)) <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>codigo_region) <span class="sc">%&gt;%</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Región"</span>, <span class="st">"Promedio IGVUST"</span>, <span class="st">"N° Comunas Q1"</span>, <span class="st">"Total Comunas"</span>, <span class="st">"% Comunas Q1"</span>),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Indicadores de vulnerabilidad por región"</span>,</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">format =</span> <span class="st">"html"</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>Indicadores de vulnerabilidad por región</caption>
@@ -578,7 +845,7 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
-</div>
+</div></div>
 </section>
 <section id="conclusiones" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="conclusiones"><span class="header-section-number">1.5</span> Conclusiones</h2>
@@ -620,8 +887,17 @@ div.csl-indent {
 <section id="relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="relación-entre-igvust-y-factores-subyacentes-desarrollo-envejecimiento-y-riesgo-de-desastres"><span class="header-section-number">2.1</span> Relación entre IGVUST y factores subyacentes (desarrollo, envejecimiento y riesgo de desastres)</h2>
 <p>Para complementar el análisis del IGVUST, se incorporó la base de <strong>Factores Subyacentes del Riesgo de Desastres</strong>, que agrega tres índices comunales adicionales: el Índice de Desarrollo Humano (IDH), el Índice Comunal de Factores Subyacentes del Riesgo de Desastres (ICFSR) y el Índice de Riesgo Ajustado por Envejecimiento (IRAPE), además del Índice de Envejecimiento poblacional.</p>
-<div class="cell">
-<div id="tbl-correlaciones" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [5]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>tabla_correlaciones <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Correlación entre el ranking nacional IGVUST y otros índices comunales (Spearman)"</span>,</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">digits =</span> <span class="dv">2</span>,</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">format =</span> <span class="st">"html"</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="tbl-correlaciones" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-correlaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices comunales (Spearman)
@@ -667,8 +943,8 @@ Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices com
 </div>
 </div>
 </figure>
-</div>
-</div>
+</div></div>
+</div></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -683,11 +959,26 @@ Table&nbsp;1: Correlación entre el ranking nacional IGVUST y otros índices com
 <p>Ejemplo: una correlación de Spearman = -0.41 con el índice de envejecimiento significa que las comunas más vulnerables (rank bajo) tienden a tener mayor envejecimiento poblacional.</p>
 </div>
 </div>
-<div id="cell-fig-scatter-idh" class="cell">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="cell-fig-scatter-idh" class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>grafico_idh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 7 rows containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 7 rows containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
 <div class="cell-output-display">
 <div id="fig-scatter-idh" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-scatter-idh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-scatter-idh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <a href="index_files/figure-html/fig-scatter-idh-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;1: Relación entre el ranking nacional IGVUST y el Índice de Desarrollo Humano"><img src="index_files/figure-html/fig-scatter-idh-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-idh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -696,12 +987,27 @@ Figure&nbsp;1: Relación entre el ranking nacional IGVUST y el Índice de Desarr
 </figure>
 </div>
 </div>
+</div></div>
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [8]:</pre></div><div id="cell-fig-scatter-icfsr" class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>grafico_icfsr</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
-<div id="cell-fig-scatter-icfsr" class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing non-finite outside the scale range
+(`stat_smooth()`).</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
+</div>
 <div class="cell-output-display">
 <div id="fig-scatter-icfsr" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-scatter-icfsr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-scatter-icfsr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <a href="index_files/figure-html/fig-scatter-icfsr-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastres (ICFSR)"><img src="index_files/figure-html/fig-scatter-icfsr-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-icfsr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -710,7 +1016,7 @@ Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastr
 </figure>
 </div>
 </div>
-</div>
+</div></div>
 <p>Los resultados muestran una <strong>relación fuerte y consistente entre el IGVUST y el desarrollo humano</strong> (ρ = 0.83): las comunas menos vulnerables socioterritorialmente tienden a tener mayor desarrollo humano, lo que valida la coherencia interna entre ambos indicadores. La relación con el <strong>envejecimiento poblacional es moderada</strong> (ρ = -0.41), sugiriendo que las comunas más vulnerables tienden a tener una población más envejecida.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -730,11 +1036,38 @@ Figure&nbsp;2: Relación entre el ranking nacional IGVUST y el riesgo de desastr
 </section>
 <section id="mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="mapa-bivariado-vulnerabilidad-social-y-riesgo-de-desastres"><span class="header-section-number">2.2</span> Mapa bivariado: vulnerabilidad social y riesgo de desastres</h2>
-<div id="cell-fig-mapa-bivariado" class="cell" data-layout-align="center">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [9]:</pre></div><div id="cell-fig-mapa-bivariado" class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># mapa </span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>mapa_bivariado <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> mapa_biv, <span class="fu">aes</span>(<span class="at">fill =</span> bi_class), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">linewidth =</span> <span class="fl">0.05</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bi_scale_fill</span>(<span class="at">pal =</span> <span class="st">"DkBlue2"</span>, <span class="at">dim =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_sf</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">76</span>, <span class="sc">-</span><span class="dv">66</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">56</span>, <span class="sc">-</span><span class="dv">17</span>), <span class="at">expand =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Vulnerabilidad IGVUST y riesgo</span><span class="sc">\n</span><span class="st">de desastres (ICFSR) por comuna"</span>) <span class="sc">+</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>() <span class="sc">+</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">b =</span> <span class="dv">5</span>)),</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>leyenda_bivariada <span class="ot">&lt;-</span> <span class="fu">bi_legend</span>(<span class="at">pal =</span> <span class="st">"DkBlue2"</span>,</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>                                <span class="at">dim =</span> <span class="dv">3</span>,</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>                                <span class="at">xlab =</span> <span class="st">"Menos vulnerable (IGVUST) →"</span>,  </span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>                                <span class="at">ylab =</span> <span class="st">"Mayor riesgo (ICFSR) →"</span>,</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>                                <span class="at">size =</span> <span class="dv">5</span>)</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co"># leyenda como panel separado</span></span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a>mapa_bivariado <span class="sc">+</span> leyenda_bivariada <span class="sc">+</span></span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_layout</span>(<span class="at">widths =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
 <div class="cell-output-display">
 <div id="fig-mapa-bivariado" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-mapa-bivariado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="fig-mapa-bivariado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
 <a href="index_files/figure-html/fig-mapa-bivariado-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;3: Distribución comunal combinada de vulnerabilidad IGVUST y riesgo de desastres (ICFSR)"><img src="index_files/figure-html/fig-mapa-bivariado-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-bivariado-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -743,7 +1076,7 @@ Figure&nbsp;3: Distribución comunal combinada de vulnerabilidad IGVUST y riesgo
 </figure>
 </div>
 </div>
-</div>
+</div></div>
 </section>
 <section id="interpretación-del-mapa-bivariado" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="interpretación-del-mapa-bivariado"><span class="header-section-number">2.3</span> Interpretación del mapa bivariado</h2>
@@ -754,8 +1087,16 @@ Figure&nbsp;3: Distribución comunal combinada de vulnerabilidad IGVUST y riesgo
 <p><strong>Metropolitana de Santiago y Valparaíso: el perfil más favorable en ambas dimensiones.</strong> Un 44,2% de las comunas de la Región Metropolitana y un 21,1% de las de Valparaíso caen en la categoría de menor vulnerabilidad social y menor riesgo de desastres, consistente con su condición de regiones más urbanizadas y con mejor infraestructura del país.</p>
 <p><strong>El resto de las regiones muestra mayor heterogeneidad interna.</strong> Solo cuatro regiones (Antofagasta, Arica y Parinacota, Magallanes y Metropolitana) presentan una categoría verdaderamente dominante, con más del 44% de sus comunas compartiendo el mismo perfil. En el resto del país —incluyendo Los Ríos, Coquimbo, Maule, O’Higgins y Biobío— la categoría más frecuente no supera el 30-42% de las comunas, lo que indica que dentro de estas regiones coexisten comunas con perfiles de riesgo bastante distintos entre sí, sin un patrón regional único que las caracterice.</p>
 <p><strong>Lectura general.</strong> Estos resultados matizan la lectura visual del mapa y confirman cuantitativamente el patrón sugerido por la correlación débil entre ambas variables, la vulnerabilidad social y el riesgo de desastres no coinciden geográficamente en la mayor parte del territorio nacional. La excepción crítica son La Araucanía, Ñuble y Los Lagos, las regiones donde ambas dimensiones de riesgo convergen con mayor frecuencia relativa.</p>
-<div class="cell">
-<div id="tbl-bivariada-regional" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [10]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>tabla_bivariada_regional <span class="sc">%&gt;%</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Categoría bivariada más frecuente por región (vulnerabilidad IGVUST y riesgo de desastres ICFSR)"</span>,</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">format =</span> <span class="st">"html"</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-container"><div class="cell-decorator"><pre>In [11]:</pre></div><div id="tbl-bivariada-regional" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bivariada-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2: Categoría bivariada más frecuente por región (vulnerabilidad IGVUST y riesgo de desastres ICFSR)
@@ -907,8 +1248,8 @@ Table&nbsp;2: Categoría bivariada más frecuente por región (vulnerabilidad IG
 </div>
 </div>
 </figure>
-</div>
-</div>
+</div></div>
+</div></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -928,8 +1269,18 @@ Table&nbsp;2: Categoría bivariada más frecuente por región (vulnerabilidad IG
 </section>
 <section id="resumen-descriptivo-de-variables" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Resumen Descriptivo de Variables</h1>
-<div class="cell">
-<div id="tbl-descriptivos" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<div class="cell-container code-fold"><div class="cell-decorator"><pre>In [12]:</pre></div><div class="cell">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dfSummary</span>(variables_descriptivas,</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">plain.ascii =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">style =</span> <span class="st">"grid"</span>,</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">round.digits =</span> <span class="dv">2</span>,</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">report.nas =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">labels.col =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">method =</span> <span class="st">"render"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-container"><div class="cell-decorator"><pre>In [13]:</pre></div><div id="tbl-descriptivos" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-descriptivos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;3
@@ -1649,19 +2000,17 @@ Table&nbsp;3
 </div>
 </div>
 </figure>
-</div>
-</div>
+</div></div>
+</div></div>
 <p><em>Última actualización: 23 de September de 2026</em></p>
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-minsoc_sivust_2025" class="csl-entry" role="listitem">
 Ministerio de Desarrollo Social y Familia. 2025. <em>Informe <span>Metodológico</span>: <span>Sistema</span> de <span>Indicadores</span> de <span>Vulnerabilidad Socioterritorial</span></em>. Subsecretaría de Evaluación Social, Ministerio de Desarrollo Social y Familia, Gobierno de Chile.
 </div>
-</div></section></div></main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+</div>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -2073,9 +2422,7 @@ Ministerio de Desarrollo Social y Familia. 2025. <em>Informe <span>Metodológico
       }
     }
   });
-  </script>
-</div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+  </script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
@@ -2106,10 +2453,7 @@ Ministerio de Desarrollo Social y Familia. 2025. <em>Informe <span>Metodológico
   };
   
 })();
-          </script>
-
-
-
-
+          </script> 
+  
 <script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
