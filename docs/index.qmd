@@ -259,4 +259,20 @@ Es importante notar que esta tabla no describe a "toda" la región, sino solo a 
 
 
 
+# Resumen Descriptivo de Variables
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-descriptivos
+
+dfSummary(variables_descriptivas,
+          plain.ascii = FALSE,
+          style = "grid",
+          round.digits = 2,
+          report.nas = TRUE,
+          labels.col = TRUE) %>%
+  print(method = "render")
+```
+
 *Última actualización: `r format(Sys.Date(), '%d de %B de %Y')`*

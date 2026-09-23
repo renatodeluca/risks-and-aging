@@ -12,6 +12,7 @@ library(sf)
 library(biscale)
 library(cowplot)
 library(scales)
+library(summarytools)
 
 # ---- Cargar factores subyacentes ----
 
@@ -214,3 +215,18 @@ tabla_bivariada_regional <- mapa_biv %>%
     pct = scales::percent(pct, accuracy = 0.1)
   ) %>%
   select(Region, Vulnerabilidad, `Riesgo desastres`, `N° comunas` = n, `Total comunas` = total_region, `% región` = pct)
+
+# ---- Resumen descriptivo de todas las variables analíticas (summarytools) ----
+
+variables_descriptivas <- datos_completos %>%
+  select(Comuna, Region, rank_nac, c_ig_nac, c_ig_reg, Clasificación,
+         pob_rsh_com, hog_com, p_cobertura_com,
+         poblacion_censada, x0_14, x65_anos_o_mas, indice_envejecimiento,
+         tasa_envejecimiento_x_100mil, idh, icfsr, irape)
+
+dfSummary(variables_descriptivas,
+          plain.ascii = FALSE,
+          style = "grid",
+          round.digits = 2,
+          report.nas = TRUE,
+          labels.col = TRUE)
