@@ -29,6 +29,7 @@ format:
 #| include: false
 source("../processing/analisis_igvust.R")
 source("../processing/analisis_subyacentes.R")
+source("../processing/analisis_bpc.r")
 ```
 
 # Análisis IGVUST
@@ -258,6 +259,185 @@ Es importante notar que esta tabla no describe a "toda" la región, sino solo a 
 
 
 
+
+# Personas cuidadoras en las regiones de Ñuble, La Araucanía y Arica y Parinacota
+
+```{r}
+#| include: false
+regiones_cuidado <- c("Ñuble", "La Araucanía", "Arica y Parinacota")
+
+etiquetas_bpc <- c(
+  cuidadoras                    = "Personas cuidadoras",
+  ingreso_laboral               = "Con ingreso laboral",
+  ingreso_admin                 = "Con ingreso en registros administrativos",
+  ingreso_admin_sueldo_min_o_mas = "Con ingreso administrativo ≥ sueldo mínimo",
+  cotiza_afp_12m                = "Con al menos una cotización de AFP (12 meses)",
+  recibe_pension                = "Que reciben alguna pensión",
+  req_cuidados                  = "Personas que requieren cuidados",
+  req_cuidados_con_cuidador     = "Requieren cuidados con al menos un cuidador",
+  req_cuidados_sin_cuidador     = "Requieren cuidados SIN cuidador"
+)
+
+# último mes disponible en la base
+bpc_reg_3 <- bpc %>%
+  filter(nivel == "Regional", region %in% regiones_cuidado) %>%
+  filter(periodo == max(periodo)) %>%
+  select(region, indicador, n) %>%
+  pivot_wider(names_from = indicador, values_from = n)
+
+tabla_bpc_absolutos <- bpc_reg_3 %>%
+  mutate(region = factor(region, levels = regiones_cuidado)) %>%
+  pivot_longer(all_of(names(etiquetas_bpc)), names_to = "indicador", values_to = "n") %>%
+  mutate(indicador = factor(indicador, levels = names(etiquetas_bpc),
+                            labels = unname(etiquetas_bpc))) %>%
+  pivot_wider(names_from = region, values_from = n) %>%
+  rename(Indicador = indicador) %>%
+  mutate(across(-1, scales::comma))
+
+tabla_bpc_tasas <- bpc_reg_3 %>%
+  transmute(
+    region,
+    `Con ingreso laboral` = 100 * ingreso_laboral / cuidadoras,
+    `En registros admin.` = 100 * ingreso_admin / cuidadoras,
+    `Admin. ≥ sueldo mínimo` = 100 * ingreso_admin_sueldo_min_o_mas / cuidadoras,
+    `Cotización AFP 12m` = 100 * cotiza_afp_12m / cuidadoras,
+    `Recibe pensión` = 100 * recibe_pension / cuidadoras,
+    `Requieren cuidados sin cuidador` = 100 * req_cuidados_sin_cuidador / req_cuidados,
+    `Personas que requieren cuidados por cuidadora` = req_cuidados / cuidadoras
+  ) %>%
+  mutate(region = factor(region, levels = regiones_cuidado)) %>%
+  mutate(across(-1, ~ round(.x, 1)))
+
+# comunas más vulnerables (cuartil 1 IGVUST) como contexto
+tabla_comunas_vuln <- datos %>%
+  filter(Region %in% regiones_cuidado) %>%
+  summarise(
+    Comunas = n(),
+    `Cuartil 1` = sum(c_ig_nac == 1, na.rm = TRUE),
+    .by = Region
+  ) %>%
+  mutate(
+    Region = factor(Region, levels = regiones_cuidado),
+    `% cuartil 1` = scales::percent(`Cuartil 1` / Comunas, accuracy = 0.1)
+  )
+```
+
+::: {.callout-warning}
+## La base BPC no tiene desglose comunal
+
+La Base de Personas Cuidadoras se entrega **solo a nivel nacional y regional**. No existe un
+desglose por comuna, de modo que **no es posible atribuir un número de cuidadores a cada comuna**.
+
+Por eso el análisis que sigue es **regional**: las cifras de cuidado se leen para las tres
+regiones completas, y el detalle de las comunas más vulnerables (cuartil 1 del IGVUST) se
+presenta como **contexto**, no como una medición de cuidado a nivel de comuna. Relacionar ambas
+fuentes a escala comunal requeriría una base de cuidadores con desglose territorial.
+:::
+
+## Volumen de personas cuidadoras
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-bpc-absolutos
+
+tabla_bpc_absolutos %>%
+  knitr::kable(
+    caption = paste0("Base de Personas Cuidadoras por región (", format(max(bpc$periodo), "%B de %Y"), ")"),
+    format = "html"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+
+bpc_reg_3 %>%
+  select(region, n = cuidadoras) %>%
+  mutate(region = factor(region, levels = regiones_cuidado)) %>%
+  ggplot(aes(x = reorder(region, n), y = n, fill = region)) +
+  geom_col(width = 0.6, show.legend = FALSE) +
+  geom_text(aes(label = scales::comma(n)), vjust = -0.4, size = 3.5) +
+  scale_fill_manual(values = c("Ñuble" = "#E85D04", "La Araucanía" = "#7A0403",
+                               "Arica y Parinacota" = "#2A9D8F")) +
+  scale_y_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.12))) +
+  labs(
+    title = "Personas cuidadoras registradas por región",
+    subtitle = format(max(bpc$periodo), "%B de %Y"),
+    x = NULL, y = "Personas cuidadoras"
+  ) +
+  theme_minimal() +
+  theme(plot.title = element_text(face = "bold", size = 11),
+        plot.subtitle = element_text(size = 9, colour = "grey40"),
+        axis.text.x = element_text(size = 8))
+```
+
+## Perfil socioeconómico de las personas cuidadoras
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-bpc-tasas
+
+tabla_bpc_tasas %>%
+  knitr::kable(
+    caption = "Indicadores de trabajo y carga de cuidado como porcentaje (o razón), último mes disponible",
+    format = "html"
+  )
+```
+
+## Communas más vulnerables como contexto
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: tbl-comunas-vuln
+
+tabla_comunas_vuln %>%
+  knitr::kable(
+    caption = "Comunas en cuartil 1 de vulnerabilidad IGVUST (contexto; la base BPC no desglosa por comuna)",
+    format = "html"
+  )
+```
+
+**Arica y Parinacota: la mayor carga relativa por cuidador.** Con 3.352 personas cuidadoras
+registradas, la región debe responder por 17.239 personas que requieren cuidados, es decir,
+cerca de **5,1 personas que requieren cuidados por cada cuidadora**, y el **80,3%** de ellas
+está sin cuidador registrado. El total de cuidadoras es el más bajo de las tres regiones, pero
+eso refleja su tamaño poblacional y no una menor presión: el 50% de sus comunas está en
+cuartil 1 del IGVUST.
+
+**Ñuble: la brecha de cuidado más amplia.** 52.949 de las 63.378 personas que requieren
+cuidados (**83,5%**) no tienen cuidador, la proporción más alta de las tres regiones, sobre un
+universo de 10.130 cuidadoras. A esto se suma que el 61,9% de sus 21 comunas pertenece al
+cuartil 1 de vulnerabilidad socioterritorial.
+
+**La Araucanía: el mayor volumen absoluto y la mayor concentración vulnerable.** Registra
+18.519 personas cuidadoras (el mayor número de las tres regiones, y un 7,3% del total nacional
+de 253.117) y 97.459 personas que requieren cuidados, de las cuales **79.000 (81,1%)** están
+sin cuidador. Es la región con la mayor proporción de comunas en cuartil 1 del IGVUST
+(**71,9% de sus 32 comunas**), lo que la confirma como el foco más intenso de doble
+vulnerabilidad identificado en el mapa bivariado.
+
+**Perfil de ingreso de las personas cuidadoras.** En las tres regiones, menos de la mitad de
+las personas cuidadoras registra ingreso laboral: 59,7% en Arica y Parinacota, 48,7% en Ñuble y
+46,9% en La Araucanía. La brecha entre el ingreso declarado y el registro administrativo es
+amplia y consistente (por ejemplo, 59,7% frente a 40,2% en Arica y Parinacota), lo que sugiere
+trabajo informal o no declarado como componente central del cuidado en estas territorios. La
+cobertura previsional es minoritaria en los tres casos: entre 25,8% y 30,8% tiene al menos una
+cotización de AFP en los últimos 12 meses, y solo un 11,0%–16,8% registra ingresos
+administrativos iguales o superiores al sueldo mínimo.
+
+::: {.callout-note}
+## Cómo leer la última columna
+
+`Personas que requieren cuidados por cuidadora` es una **razón de carga**, no una tasa de
+dependencia formal. Una misma persona cuidadora puede atender a más de una persona que
+requiere cuidados, y la base no registra esa correspondencia individual, por lo que el
+indicador no debe leerse como "cuántas personas atiende cada cuidadora", sino como la
+proporción entre el volumen de demanda de cuidados y el de oferta de cuidadores registrados
+en la región.
+:::
 
 # Resumen Descriptivo de Variables
 

@@ -1,0 +1,646 @@
+nivel,cod_region,codigo_region,region,periodo,indicador,sexo,tramo_edad,tramo_cse,escolaridad,n,estadistica
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,NA,244125,Número de personas cuidadoras
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,NA,248430,Número de personas cuidadoras
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,NA,253117,Número de personas cuidadoras
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,NA,207980,Número de personas cuidadoras mujeres
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,NA,211508,Número de personas cuidadoras mujeres
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,NA,215282,Número de personas cuidadoras mujeres
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,NA,36145,Número de personas cuidadoras hombres
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,NA,36922,Número de personas cuidadoras hombres
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,NA,37835,Número de personas cuidadoras hombres
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,18-29 años,NA,NA,13007,Número de personas cuidadoras 18-29 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,18-29 años,NA,NA,13157,Número de personas cuidadoras 18-29 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,18-29 años,NA,NA,13370,Número de personas cuidadoras 18-29 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,30-44 años,NA,NA,75472,Número de personas cuidadoras 30-44 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,30-44 años,NA,NA,76693,Número de personas cuidadoras 30-44 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,30-44 años,NA,NA,77964,Número de personas cuidadoras 30-44 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,45-59 años,NA,NA,81926,Número de personas cuidadoras 45-59 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,45-59 años,NA,NA,83366,Número de personas cuidadoras 45-59 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,45-59 años,NA,NA,84877,Número de personas cuidadoras 45-59 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,60 años o más,NA,NA,73720,Número de personas cuidadoras 60 años o más
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,60 años o más,NA,NA,75214,Número de personas cuidadoras 60 años o más
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,60 años o más,NA,NA,76906,Número de personas cuidadoras 60 años o más
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,0-40%,NA,184808,Número de personas cuidadoras Tramo CSE 0-40%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,0-40%,NA,188082,Número de personas cuidadoras Tramo CSE 0-40%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,0-40%,NA,195756,Número de personas cuidadoras Tramo CSE 0-40%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,41-60%,NA,30229,Número de personas cuidadoras Tramo CSE 41-60%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,41-60%,NA,30732,Número de personas cuidadoras Tramo CSE 41-60%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,41-60%,NA,29047,Número de personas cuidadoras Tramo CSE 41-60%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,61-80%,NA,16842,Número de personas cuidadoras Tramo CSE 61-80%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,61-80%,NA,17037,Número de personas cuidadoras Tramo CSE 61-80%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,61-80%,NA,16137,Número de personas cuidadoras Tramo CSE 61-80%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,81-100%,NA,12246,Número de personas cuidadoras Tramo CSE 81-100%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,81-100%,NA,12579,Número de personas cuidadoras Tramo CSE 81-100%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,81-100%,NA,12177,Número de personas cuidadoras Tramo CSE 81-100%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Sin escolaridad,2932,Número de personas cuidadoras Sin Escolaridad
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Sin escolaridad,2999,Número de personas cuidadoras Sin Escolaridad
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Sin escolaridad,3081,Número de personas cuidadoras Sin Escolaridad
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Básica incompleta,31277,Número de personas cuidadoras con educación básica incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Básica incompleta,31772,Número de personas cuidadoras con educación básica incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Básica incompleta,32334,Número de personas cuidadoras con educación básica incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Básica completa,25215,Número de personas cuidadoras con educación básica completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Básica completa,25624,Número de personas cuidadoras con educación básica completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Básica completa,26103,Número de personas cuidadoras con educación básica completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Media incompleta,20705,Número de personas cuidadoras con educación media incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Media incompleta,21027,Número de personas cuidadoras con educación media incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Media incompleta,21396,Número de personas cuidadoras con educación media incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Media completa,74758,Número de personas cuidadoras con educación media completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Media completa,76001,Número de personas cuidadoras con educación media completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Media completa,77334,Número de personas cuidadoras con educación media completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Superior incompleta,51570,Número de personas cuidadoras con educación superior incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Superior incompleta,52553,Número de personas cuidadoras con educación superior incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Superior incompleta,53599,Número de personas cuidadoras con educación superior incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Superior completa,37668,Número de personas cuidadoras con educación superior completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Superior completa,38454,Número de personas cuidadoras con educación superior completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Superior completa,39270,Número de personas cuidadoras con educación superior completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Total,NA,NA,Sin información,0,Número de personas cuidadoras Sin Información escolaridad
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Total,NA,NA,Sin información,0,Número de personas cuidadoras Sin Información escolaridad
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Total,NA,NA,Sin información,0,Número de personas cuidadoras Sin Información escolaridad
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,18-29 años,NA,NA,10662,Número de personas cuidadoras mujeres de 18-29 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,18-29 años,NA,NA,10773,Número de personas cuidadoras mujeres de 18-29 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,18-29 años,NA,NA,10919,Número de personas cuidadoras mujeres de 18-29 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,18-29 años,NA,NA,2345,Número de personas cuidadoras hombres de 18-29 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,18-29 años,NA,NA,2384,Número de personas cuidadoras hombres de 18-29 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,18-29 años,NA,NA,2451,Número de personas cuidadoras hombres de 18-29 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,30-44 años,NA,NA,68870,Número de personas cuidadoras mujeres de 30-44 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,30-44 años,NA,NA,69947,Número de personas cuidadoras mujeres de 30-44 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,30-44 años,NA,NA,71039,Número de personas cuidadoras mujeres de 30-44 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,30-44 años,NA,NA,6602,Número de personas cuidadoras hombres de 30-44 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,30-44 años,NA,NA,6746,Número de personas cuidadoras hombres de 30-44 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,30-44 años,NA,NA,6925,Número de personas cuidadoras hombres de 30-44 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,45-59 años,NA,NA,71180,Número de personas cuidadoras mujeres de 45-59 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,45-59 años,NA,NA,72389,Número de personas cuidadoras mujeres de 45-59 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,45-59 años,NA,NA,73651,Número de personas cuidadoras mujeres de 45-59 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,45-59 años,NA,NA,10746,Número de personas cuidadoras hombres de 45-59 años
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,45-59 años,NA,NA,10977,Número de personas cuidadoras hombres de 45-59 años
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,45-59 años,NA,NA,11226,Número de personas cuidadoras hombres de 45-59 años
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,60 años o más,NA,NA,57268,Número de personas cuidadoras mujeres de 60 años o más
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,60 años o más,NA,NA,58399,Número de personas cuidadoras mujeres de 60 años o más
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,60 años o más,NA,NA,59673,Número de personas cuidadoras mujeres de 60 años o más
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,60 años o más,NA,NA,16452,Número de personas cuidadoras hombres de 60 años o más
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,60 años o más,NA,NA,16815,Número de personas cuidadoras hombres de 60 años o más
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,60 años o más,NA,NA,17233,Número de personas cuidadoras hombres de 60 años o más
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,0-40%,NA,160460,Número de personas cuidadoras mujeres Tramo CSE 0%-40%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,0-40%,NA,163157,Número de personas cuidadoras mujeres Tramo CSE 0%-40%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,0-40%,NA,169478,Número de personas cuidadoras mujeres Tramo CSE 0%-40%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,0-40%,NA,24348,Número de personas cuidadoras hombres Tramo CSE 0%-40%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,0-40%,NA,24925,Número de personas cuidadoras hombres Tramo CSE 0%-40%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,0-40%,NA,26278,Número de personas cuidadoras hombres Tramo CSE 0%-40%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,41-60%,NA,24377,Número de personas cuidadoras mujeres Tramo CSE 41%-60%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,41-60%,NA,24807,Número de personas cuidadoras mujeres Tramo CSE 41%-60%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,41-60%,NA,23340,Número de personas cuidadoras mujeres Tramo CSE 41%-60%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,41-60%,NA,5852,Número de personas cuidadoras hombres Tramo CSE 41%-60%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,41-60%,NA,5925,Número de personas cuidadoras hombres Tramo CSE 41%-60%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,41-60%,NA,5707,Número de personas cuidadoras hombres Tramo CSE 41%-60%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,61-80%,NA,13443,Número de personas cuidadoras mujeres Tramo CSE 61%-80%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,61-80%,NA,13580,Número de personas cuidadoras mujeres Tramo CSE 61%-80%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,61-80%,NA,12810,Número de personas cuidadoras mujeres Tramo CSE 61%-80%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,61-80%,NA,3399,Número de personas cuidadoras hombres Tramo CSE 61%-80%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,61-80%,NA,3457,Número de personas cuidadoras hombres Tramo CSE 61%-80%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,61-80%,NA,3327,Número de personas cuidadoras hombres Tramo CSE 61%-80%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,81-100%,NA,9700,Número de personas cuidadoras mujeres Tramo CSE 81%-100%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,81-100%,NA,9964,Número de personas cuidadoras mujeres Tramo CSE 81%-100%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,81-100%,NA,9654,Número de personas cuidadoras mujeres Tramo CSE 81%-100%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,81-100%,NA,2546,Número de personas cuidadoras hombres Tramo CSE 81%-100%
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,81-100%,NA,2615,Número de personas cuidadoras hombres Tramo CSE 81%-100%
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,81-100%,NA,2523,Número de personas cuidadoras hombres Tramo CSE 81%-100%
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Sin escolaridad,2387,Número de personas cuidadoras mujeres Sin escolaridad
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Sin escolaridad,2436,Número de personas cuidadoras mujeres Sin escolaridad
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Sin escolaridad,2495,Número de personas cuidadoras mujeres Sin escolaridad
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Sin escolaridad,545,Número de personas cuidadoras hombres Sin escolaridad
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Sin escolaridad,563,Número de personas cuidadoras hombres Sin escolaridad
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Sin escolaridad,586,Número de personas cuidadoras hombres Sin escolaridad
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Básica incompleta,26046,Número de personas cuidadoras mujeres con Básica incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Básica incompleta,26428,Número de personas cuidadoras mujeres con Básica incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Básica incompleta,26835,Número de personas cuidadoras mujeres con Básica incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Básica incompleta,5231,Número de personas cuidadoras hombres con Básica incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Básica incompleta,5344,Número de personas cuidadoras hombres con Básica incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Básica incompleta,5499,Número de personas cuidadoras hombres con Básica incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Básica completa,21207,Número de personas cuidadoras mujeres con Básica completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Básica completa,21559,Número de personas cuidadoras mujeres con Básica completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Básica completa,21926,Número de personas cuidadoras mujeres con Básica completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Básica completa,4008,Número de personas cuidadoras hombres con Básica completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Básica completa,4065,Número de personas cuidadoras hombres con Básica completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Básica completa,4177,Número de personas cuidadoras hombres con Básica completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Media incompleta,17774,Número de personas cuidadoras mujeres con Media incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Media incompleta,18039,Número de personas cuidadoras mujeres con Media incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Media incompleta,18317,Número de personas cuidadoras mujeres con Media incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Media incompleta,2931,Número de personas cuidadoras hombres con Media incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Media incompleta,2988,Número de personas cuidadoras hombres con Media incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Media incompleta,3079,Número de personas cuidadoras hombres con Media incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Media completa,64081,Número de personas cuidadoras mujeres con Media completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Media completa,65077,Número de personas cuidadoras mujeres con Media completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Media completa,66221,Número de personas cuidadoras mujeres con Media completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Media completa,10677,Número de personas cuidadoras hombres con Media completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Media completa,10924,Número de personas cuidadoras hombres con Media completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Media completa,11113,Número de personas cuidadoras hombres con Media completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Superior incompleta,43211,Número de personas cuidadoras mujeres con Superior incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Superior incompleta,44023,Número de personas cuidadoras mujeres con Superior incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Superior incompleta,44847,Número de personas cuidadoras mujeres con Superior incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Superior incompleta,8359,Número de personas cuidadoras hombres con Superior incompleta
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Superior incompleta,8530,Número de personas cuidadoras hombres con Superior incompleta
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Superior incompleta,8752,Número de personas cuidadoras hombres con Superior incompleta
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Superior completa,33274,Número de personas cuidadoras mujeres con Superior completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Superior completa,33946,Número de personas cuidadoras mujeres con Superior completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Superior completa,34641,Número de personas cuidadoras mujeres con Superior completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Superior completa,4394,Número de personas cuidadoras hombres con Superior completa
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Superior completa,4508,Número de personas cuidadoras hombres con Superior completa
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Superior completa,4629,Número de personas cuidadoras hombres con Superior completa
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Mujer,NA,NA,Sin información,0,Número de personas cuidadoras mujeres Sin información
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Mujer,NA,NA,Sin información,0,Número de personas cuidadoras mujeres Sin información
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Mujer,NA,NA,Sin información,0,Número de personas cuidadoras mujeres Sin información
+Nacional,NA,NA,Nacional,2026-01-01,cuidadoras,Hombre,NA,NA,Sin información,0,Número de personas cuidadoras hombres Sin información
+Nacional,NA,NA,Nacional,2026-02-01,cuidadoras,Hombre,NA,NA,Sin información,0,Número de personas cuidadoras hombres Sin información
+Nacional,NA,NA,Nacional,2026-03-01,cuidadoras,Hombre,NA,NA,Sin información,0,Número de personas cuidadoras hombres Sin información
+Regional,15,15,Arica y Parinacota,2026-01-01,cuidadoras,Total,NA,NA,NA,3220,Número de personas cuidadoras región
+Regional,15,15,Arica y Parinacota,2026-02-01,cuidadoras,Total,NA,NA,NA,3281,Número de personas cuidadoras región
+Regional,15,15,Arica y Parinacota,2026-03-01,cuidadoras,Total,NA,NA,NA,3352,Número de personas cuidadoras región
+Regional,1,01,Tarapacá,2026-01-01,cuidadoras,Total,NA,NA,NA,4172,Número de personas cuidadoras región
+Regional,1,01,Tarapacá,2026-02-01,cuidadoras,Total,NA,NA,NA,4305,Número de personas cuidadoras región
+Regional,1,01,Tarapacá,2026-03-01,cuidadoras,Total,NA,NA,NA,4444,Número de personas cuidadoras región
+Regional,2,02,Antofagasta,2026-01-01,cuidadoras,Total,NA,NA,NA,6072,Número de personas cuidadoras región
+Regional,2,02,Antofagasta,2026-02-01,cuidadoras,Total,NA,NA,NA,6174,Número de personas cuidadoras región
+Regional,2,02,Antofagasta,2026-03-01,cuidadoras,Total,NA,NA,NA,6245,Número de personas cuidadoras región
+Regional,3,03,Atacama,2026-01-01,cuidadoras,Total,NA,NA,NA,4278,Número de personas cuidadoras región
+Regional,3,03,Atacama,2026-02-01,cuidadoras,Total,NA,NA,NA,4391,Número de personas cuidadoras región
+Regional,3,03,Atacama,2026-03-01,cuidadoras,Total,NA,NA,NA,4510,Número de personas cuidadoras región
+Regional,4,04,Coquimbo,2026-01-01,cuidadoras,Total,NA,NA,NA,14031,Número de personas cuidadoras región
+Regional,4,04,Coquimbo,2026-02-01,cuidadoras,Total,NA,NA,NA,14289,Número de personas cuidadoras región
+Regional,4,04,Coquimbo,2026-03-01,cuidadoras,Total,NA,NA,NA,14647,Número de personas cuidadoras región
+Regional,5,05,Valparaíso,2026-01-01,cuidadoras,Total,NA,NA,NA,25452,Número de personas cuidadoras región
+Regional,5,05,Valparaíso,2026-02-01,cuidadoras,Total,NA,NA,NA,26064,Número de personas cuidadoras región
+Regional,5,05,Valparaíso,2026-03-01,cuidadoras,Total,NA,NA,NA,26576,Número de personas cuidadoras región
+Regional,13,13,Metropolitana,2026-01-01,cuidadoras,Total,NA,NA,NA,73583,Número de personas cuidadoras región
+Regional,13,13,Metropolitana,2026-02-01,cuidadoras,Total,NA,NA,NA,74759,Número de personas cuidadoras región
+Regional,13,13,Metropolitana,2026-03-01,cuidadoras,Total,NA,NA,NA,76055,Número de personas cuidadoras región
+Regional,6,06,O'Higgins,2026-01-01,cuidadoras,Total,NA,NA,NA,15542,Número de personas cuidadoras región
+Regional,6,06,O'Higgins,2026-02-01,cuidadoras,Total,NA,NA,NA,15753,Número de personas cuidadoras región
+Regional,6,06,O'Higgins,2026-03-01,cuidadoras,Total,NA,NA,NA,16142,Número de personas cuidadoras región
+Regional,7,07,Maule,2026-01-01,cuidadoras,Total,NA,NA,NA,17593,Número de personas cuidadoras región
+Regional,7,07,Maule,2026-02-01,cuidadoras,Total,NA,NA,NA,17920,Número de personas cuidadoras región
+Regional,7,07,Maule,2026-03-01,cuidadoras,Total,NA,NA,NA,18263,Número de personas cuidadoras región
+Regional,16,16,Ñuble,2026-01-01,cuidadoras,Total,NA,NA,NA,9715,Número de personas cuidadoras región
+Regional,16,16,Ñuble,2026-02-01,cuidadoras,Total,NA,NA,NA,9912,Número de personas cuidadoras región
+Regional,16,16,Ñuble,2026-03-01,cuidadoras,Total,NA,NA,NA,10130,Número de personas cuidadoras región
+Regional,8,08,Biobío,2026-01-01,cuidadoras,Total,NA,NA,NA,29777,Número de personas cuidadoras región
+Regional,8,08,Biobío,2026-02-01,cuidadoras,Total,NA,NA,NA,30163,Número de personas cuidadoras región
+Regional,8,08,Biobío,2026-03-01,cuidadoras,Total,NA,NA,NA,30508,Número de personas cuidadoras región
+Regional,9,09,La Araucanía,2026-01-01,cuidadoras,Total,NA,NA,NA,17823,Número de personas cuidadoras región
+Regional,9,09,La Araucanía,2026-02-01,cuidadoras,Total,NA,NA,NA,18163,Número de personas cuidadoras región
+Regional,9,09,La Araucanía,2026-03-01,cuidadoras,Total,NA,NA,NA,18519,Número de personas cuidadoras región
+Regional,14,14,Los Ríos,2026-01-01,cuidadoras,Total,NA,NA,NA,6109,Número de personas cuidadoras región
+Regional,14,14,Los Ríos,2026-02-01,cuidadoras,Total,NA,NA,NA,6284,Número de personas cuidadoras región
+Regional,14,14,Los Ríos,2026-03-01,cuidadoras,Total,NA,NA,NA,6449,Número de personas cuidadoras región
+Regional,10,10,Los Lagos,2026-01-01,cuidadoras,Total,NA,NA,NA,13027,Número de personas cuidadoras región
+Regional,10,10,Los Lagos,2026-02-01,cuidadoras,Total,NA,NA,NA,13210,Número de personas cuidadoras región
+Regional,10,10,Los Lagos,2026-03-01,cuidadoras,Total,NA,NA,NA,13457,Número de personas cuidadoras región
+Regional,11,11,Aysén,2026-01-01,cuidadoras,Total,NA,NA,NA,1852,Número de personas cuidadoras región
+Regional,11,11,Aysén,2026-02-01,cuidadoras,Total,NA,NA,NA,1871,Número de personas cuidadoras región
+Regional,11,11,Aysén,2026-03-01,cuidadoras,Total,NA,NA,NA,1899,Número de personas cuidadoras región
+Regional,12,12,Magallanes,2026-01-01,cuidadoras,Total,NA,NA,NA,1879,Número de personas cuidadoras región
+Regional,12,12,Magallanes,2026-02-01,cuidadoras,Total,NA,NA,NA,1891,Número de personas cuidadoras región
+Regional,12,12,Magallanes,2026-03-01,cuidadoras,Total,NA,NA,NA,1921,Número de personas cuidadoras región
+Nacional,NA,NA,Nacional,2026-01-01,ingreso_laboral,Total,NA,NA,NA,130368,Número de personas cuidadoras con ingreso laboral
+Nacional,NA,NA,Nacional,2026-02-01,ingreso_laboral,Total,NA,NA,NA,132372,Número de personas cuidadoras con ingreso laboral
+Nacional,NA,NA,Nacional,2026-03-01,ingreso_laboral,Total,NA,NA,NA,133353,Número de personas cuidadoras con ingreso laboral
+Regional,15,15,Arica y Parinacota,2026-01-01,ingreso_laboral,Total,NA,NA,NA,1934,Número de personas cuidadoras con ingreso laboral región
+Regional,15,15,Arica y Parinacota,2026-02-01,ingreso_laboral,Total,NA,NA,NA,1970,Número de personas cuidadoras con ingreso laboral región
+Regional,15,15,Arica y Parinacota,2026-03-01,ingreso_laboral,Total,NA,NA,NA,2000,Número de personas cuidadoras con ingreso laboral región
+Regional,1,01,Tarapacá,2026-01-01,ingreso_laboral,Total,NA,NA,NA,2701,Número de personas cuidadoras con ingreso laboral región
+Regional,1,01,Tarapacá,2026-02-01,ingreso_laboral,Total,NA,NA,NA,2788,Número de personas cuidadoras con ingreso laboral región
+Regional,1,01,Tarapacá,2026-03-01,ingreso_laboral,Total,NA,NA,NA,2854,Número de personas cuidadoras con ingreso laboral región
+Regional,2,02,Antofagasta,2026-01-01,ingreso_laboral,Total,NA,NA,NA,3769,Número de personas cuidadoras con ingreso laboral región
+Regional,2,02,Antofagasta,2026-02-01,ingreso_laboral,Total,NA,NA,NA,3822,Número de personas cuidadoras con ingreso laboral región
+Regional,2,02,Antofagasta,2026-03-01,ingreso_laboral,Total,NA,NA,NA,3829,Número de personas cuidadoras con ingreso laboral región
+Regional,3,03,Atacama,2026-01-01,ingreso_laboral,Total,NA,NA,NA,2339,Número de personas cuidadoras con ingreso laboral región
+Regional,3,03,Atacama,2026-02-01,ingreso_laboral,Total,NA,NA,NA,2390,Número de personas cuidadoras con ingreso laboral región
+Regional,3,03,Atacama,2026-03-01,ingreso_laboral,Total,NA,NA,NA,2427,Número de personas cuidadoras con ingreso laboral región
+Regional,4,04,Coquimbo,2026-01-01,ingreso_laboral,Total,NA,NA,NA,7649,Número de personas cuidadoras con ingreso laboral región
+Regional,4,04,Coquimbo,2026-02-01,ingreso_laboral,Total,NA,NA,NA,7744,Número de personas cuidadoras con ingreso laboral región
+Regional,4,04,Coquimbo,2026-03-01,ingreso_laboral,Total,NA,NA,NA,7846,Número de personas cuidadoras con ingreso laboral región
+Regional,5,05,Valparaíso,2026-01-01,ingreso_laboral,Total,NA,NA,NA,13465,Número de personas cuidadoras con ingreso laboral región
+Regional,5,05,Valparaíso,2026-02-01,ingreso_laboral,Total,NA,NA,NA,13713,Número de personas cuidadoras con ingreso laboral región
+Regional,5,05,Valparaíso,2026-03-01,ingreso_laboral,Total,NA,NA,NA,13868,Número de personas cuidadoras con ingreso laboral región
+Regional,13,13,Metropolitana,2026-01-01,ingreso_laboral,Total,NA,NA,NA,39852,Número de personas cuidadoras con ingreso laboral región
+Regional,13,13,Metropolitana,2026-02-01,ingreso_laboral,Total,NA,NA,NA,40397,Número de personas cuidadoras con ingreso laboral región
+Regional,13,13,Metropolitana,2026-03-01,ingreso_laboral,Total,NA,NA,NA,40694,Número de personas cuidadoras con ingreso laboral región
+Regional,6,06,O'Higgins,2026-01-01,ingreso_laboral,Total,NA,NA,NA,8481,Número de personas cuidadoras con ingreso laboral región
+Regional,6,06,O'Higgins,2026-02-01,ingreso_laboral,Total,NA,NA,NA,8565,Número de personas cuidadoras con ingreso laboral región
+Regional,6,06,O'Higgins,2026-03-01,ingreso_laboral,Total,NA,NA,NA,8618,Número de personas cuidadoras con ingreso laboral región
+Regional,7,07,Maule,2026-01-01,ingreso_laboral,Total,NA,NA,NA,9493,Número de personas cuidadoras con ingreso laboral región
+Regional,7,07,Maule,2026-02-01,ingreso_laboral,Total,NA,NA,NA,9694,Número de personas cuidadoras con ingreso laboral región
+Regional,7,07,Maule,2026-03-01,ingreso_laboral,Total,NA,NA,NA,9675,Número de personas cuidadoras con ingreso laboral región
+Regional,16,16,Ñuble,2026-01-01,ingreso_laboral,Total,NA,NA,NA,4749,Número de personas cuidadoras con ingreso laboral región
+Regional,16,16,Ñuble,2026-02-01,ingreso_laboral,Total,NA,NA,NA,4888,Número de personas cuidadoras con ingreso laboral región
+Regional,16,16,Ñuble,2026-03-01,ingreso_laboral,Total,NA,NA,NA,4936,Número de personas cuidadoras con ingreso laboral región
+Regional,8,08,Biobío,2026-01-01,ingreso_laboral,Total,NA,NA,NA,15248,Número de personas cuidadoras con ingreso laboral región
+Regional,8,08,Biobío,2026-02-01,ingreso_laboral,Total,NA,NA,NA,15428,Número de personas cuidadoras con ingreso laboral región
+Regional,8,08,Biobío,2026-03-01,ingreso_laboral,Total,NA,NA,NA,15429,Número de personas cuidadoras con ingreso laboral región
+Regional,9,09,La Araucanía,2026-01-01,ingreso_laboral,Total,NA,NA,NA,8457,Número de personas cuidadoras con ingreso laboral región
+Regional,9,09,La Araucanía,2026-02-01,ingreso_laboral,Total,NA,NA,NA,8586,Número de personas cuidadoras con ingreso laboral región
+Regional,9,09,La Araucanía,2026-03-01,ingreso_laboral,Total,NA,NA,NA,8689,Número de personas cuidadoras con ingreso laboral región
+Regional,14,14,Los Ríos,2026-01-01,ingreso_laboral,Total,NA,NA,NA,3027,Número de personas cuidadoras con ingreso laboral región
+Regional,14,14,Los Ríos,2026-02-01,ingreso_laboral,Total,NA,NA,NA,3109,Número de personas cuidadoras con ingreso laboral región
+Regional,14,14,Los Ríos,2026-03-01,ingreso_laboral,Total,NA,NA,NA,3150,Número de personas cuidadoras con ingreso laboral región
+Regional,10,10,Los Lagos,2026-01-01,ingreso_laboral,Total,NA,NA,NA,6881,Número de personas cuidadoras con ingreso laboral región
+Regional,10,10,Los Lagos,2026-02-01,ingreso_laboral,Total,NA,NA,NA,6952,Número de personas cuidadoras con ingreso laboral región
+Regional,10,10,Los Lagos,2026-03-01,ingreso_laboral,Total,NA,NA,NA,7004,Número de personas cuidadoras con ingreso laboral región
+Regional,11,11,Aysén,2026-01-01,ingreso_laboral,Total,NA,NA,NA,1183,Número de personas cuidadoras con ingreso laboral región
+Regional,11,11,Aysén,2026-02-01,ingreso_laboral,Total,NA,NA,NA,1184,Número de personas cuidadoras con ingreso laboral región
+Regional,11,11,Aysén,2026-03-01,ingreso_laboral,Total,NA,NA,NA,1183,Número de personas cuidadoras con ingreso laboral región
+Regional,12,12,Magallanes,2026-01-01,ingreso_laboral,Total,NA,NA,NA,1140,Número de personas cuidadoras con ingreso laboral región
+Regional,12,12,Magallanes,2026-02-01,ingreso_laboral,Total,NA,NA,NA,1142,Número de personas cuidadoras con ingreso laboral región
+Regional,12,12,Magallanes,2026-03-01,ingreso_laboral,Total,NA,NA,NA,1151,Número de personas cuidadoras con ingreso laboral región
+Nacional,NA,NA,Nacional,2026-01-01,ingreso_admin,Total,NA,NA,NA,93217,Número de personas cuidadoras con ingreso laboral en registros administrativos
+Nacional,NA,NA,Nacional,2026-02-01,ingreso_admin,Total,NA,NA,NA,95141,Número de personas cuidadoras con ingreso laboral en registros administrativos
+Nacional,NA,NA,Nacional,2026-03-01,ingreso_admin,Total,NA,NA,NA,96010,Número de personas cuidadoras con ingreso laboral en registros administrativos
+Regional,15,15,Arica y Parinacota,2026-01-01,ingreso_admin,Total,NA,NA,NA,1271,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,15,15,Arica y Parinacota,2026-02-01,ingreso_admin,Total,NA,NA,NA,1306,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,15,15,Arica y Parinacota,2026-03-01,ingreso_admin,Total,NA,NA,NA,1347,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,1,01,Tarapacá,2026-01-01,ingreso_admin,Total,NA,NA,NA,1730,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,1,01,Tarapacá,2026-02-01,ingreso_admin,Total,NA,NA,NA,1797,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,1,01,Tarapacá,2026-03-01,ingreso_admin,Total,NA,NA,NA,1853,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,2,02,Antofagasta,2026-01-01,ingreso_admin,Total,NA,NA,NA,2811,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,2,02,Antofagasta,2026-02-01,ingreso_admin,Total,NA,NA,NA,2863,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,2,02,Antofagasta,2026-03-01,ingreso_admin,Total,NA,NA,NA,2884,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,3,03,Atacama,2026-01-01,ingreso_admin,Total,NA,NA,NA,1733,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,3,03,Atacama,2026-02-01,ingreso_admin,Total,NA,NA,NA,1773,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,3,03,Atacama,2026-03-01,ingreso_admin,Total,NA,NA,NA,1811,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,4,04,Coquimbo,2026-01-01,ingreso_admin,Total,NA,NA,NA,5199,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,4,04,Coquimbo,2026-02-01,ingreso_admin,Total,NA,NA,NA,5276,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,4,04,Coquimbo,2026-03-01,ingreso_admin,Total,NA,NA,NA,5362,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,5,05,Valparaíso,2026-01-01,ingreso_admin,Total,NA,NA,NA,9493,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,5,05,Valparaíso,2026-02-01,ingreso_admin,Total,NA,NA,NA,9704,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,5,05,Valparaíso,2026-03-01,ingreso_admin,Total,NA,NA,NA,9822,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,13,13,Metropolitana,2026-01-01,ingreso_admin,Total,NA,NA,NA,28551,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,13,13,Metropolitana,2026-02-01,ingreso_admin,Total,NA,NA,NA,29067,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,13,13,Metropolitana,2026-03-01,ingreso_admin,Total,NA,NA,NA,29315,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,6,06,O'Higgins,2026-01-01,ingreso_admin,Total,NA,NA,NA,6242,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,6,06,O'Higgins,2026-02-01,ingreso_admin,Total,NA,NA,NA,6355,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,6,06,O'Higgins,2026-03-01,ingreso_admin,Total,NA,NA,NA,6397,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,7,07,Maule,2026-01-01,ingreso_admin,Total,NA,NA,NA,6836,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,7,07,Maule,2026-02-01,ingreso_admin,Total,NA,NA,NA,7048,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,7,07,Maule,2026-03-01,ingreso_admin,Total,NA,NA,NA,7014,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,16,16,Ñuble,2026-01-01,ingreso_admin,Total,NA,NA,NA,3232,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,16,16,Ñuble,2026-02-01,ingreso_admin,Total,NA,NA,NA,3362,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,16,16,Ñuble,2026-03-01,ingreso_admin,Total,NA,NA,NA,3402,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,8,08,Biobío,2026-01-01,ingreso_admin,Total,NA,NA,NA,11487,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,8,08,Biobío,2026-02-01,ingreso_admin,Total,NA,NA,NA,11679,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,8,08,Biobío,2026-03-01,ingreso_admin,Total,NA,NA,NA,11700,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,9,09,La Araucanía,2026-01-01,ingreso_admin,Total,NA,NA,NA,5725,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,9,09,La Araucanía,2026-02-01,ingreso_admin,Total,NA,NA,NA,5862,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,9,09,La Araucanía,2026-03-01,ingreso_admin,Total,NA,NA,NA,5960,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,14,14,Los Ríos,2026-01-01,ingreso_admin,Total,NA,NA,NA,2134,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,14,14,Los Ríos,2026-02-01,ingreso_admin,Total,NA,NA,NA,2202,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,14,14,Los Ríos,2026-03-01,ingreso_admin,Total,NA,NA,NA,2233,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,10,10,Los Lagos,2026-01-01,ingreso_admin,Total,NA,NA,NA,4933,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,10,10,Los Lagos,2026-02-01,ingreso_admin,Total,NA,NA,NA,4998,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,10,10,Los Lagos,2026-03-01,ingreso_admin,Total,NA,NA,NA,5054,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,11,11,Aysén,2026-01-01,ingreso_admin,Total,NA,NA,NA,933,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,11,11,Aysén,2026-02-01,ingreso_admin,Total,NA,NA,NA,938,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,11,11,Aysén,2026-03-01,ingreso_admin,Total,NA,NA,NA,936,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,12,12,Magallanes,2026-01-01,ingreso_admin,Total,NA,NA,NA,907,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,12,12,Magallanes,2026-02-01,ingreso_admin,Total,NA,NA,NA,911,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Regional,12,12,Magallanes,2026-03-01,ingreso_admin,Total,NA,NA,NA,920,Número de personas cuidadoras con ingreso laboral en registros administrativos región
+Nacional,NA,NA,Nacional,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,37082,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo
+Nacional,NA,NA,Nacional,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,37850,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo
+Nacional,NA,NA,Nacional,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,38695,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo
+Regional,15,15,Arica y Parinacota,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,514,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,15,15,Arica y Parinacota,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,535,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,15,15,Arica y Parinacota,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,564,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,1,01,Tarapacá,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,819,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,1,01,Tarapacá,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,840,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,1,01,Tarapacá,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,857,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,2,02,Antofagasta,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,1447,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,2,02,Antofagasta,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,1485,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,2,02,Antofagasta,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,1508,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,3,03,Atacama,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,741,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,3,03,Atacama,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,753,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,3,03,Atacama,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,781,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,4,04,Coquimbo,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2060,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,4,04,Coquimbo,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2120,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,4,04,Coquimbo,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2206,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,5,05,Valparaíso,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,3619,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,5,05,Valparaíso,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,3704,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,5,05,Valparaíso,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,3780,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,13,13,Metropolitana,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,12149,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,13,13,Metropolitana,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,12415,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,13,13,Metropolitana,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,12696,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,6,06,O'Higgins,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2248,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,6,06,O'Higgins,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2272,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,6,06,O'Higgins,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2299,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,7,07,Maule,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2254,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,7,07,Maule,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2316,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,7,07,Maule,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2344,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,16,16,Ñuble,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,1049,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,16,16,Ñuble,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,1062,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,16,16,Ñuble,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,1118,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,8,08,Biobío,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,4419,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,8,08,Biobío,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,4480,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,8,08,Biobío,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,4531,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,9,09,La Araucanía,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2019,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,9,09,La Araucanía,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2060,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,9,09,La Araucanía,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2114,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,14,14,Los Ríos,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,787,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,14,14,Los Ríos,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,821,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,14,14,Los Ríos,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,848,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,10,10,Los Lagos,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2031,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,10,10,Los Lagos,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2059,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,10,10,Los Lagos,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,2112,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,11,11,Aysén,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,443,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,11,11,Aysén,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,444,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,11,11,Aysén,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,450,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,12,12,Magallanes,2026-01-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,483,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,12,12,Magallanes,2026-02-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,484,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Regional,12,12,Magallanes,2026-03-01,ingreso_admin_sueldo_min_o_mas,Total,NA,NA,NA,487,Número de personas cuidadoras con ingreso laboral en registros administrativos mayor o igual a sueldo mínimo región
+Nacional,NA,NA,Nacional,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,77469,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses
+Nacional,NA,NA,Nacional,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,79150,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses
+Nacional,NA,NA,Nacional,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,76643,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses
+Regional,15,15,Arica y Parinacota,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,1028,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,15,15,Arica y Parinacota,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,1059,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,15,15,Arica y Parinacota,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,1031,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,1,01,Tarapacá,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,1420,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,1,01,Tarapacá,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,1471,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,1,01,Tarapacá,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,1438,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,2,02,Antofagasta,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,2359,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,2,02,Antofagasta,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,2402,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,2,02,Antofagasta,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,2349,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,3,03,Atacama,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,1406,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,3,03,Atacama,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,1434,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,3,03,Atacama,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,1388,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,4,04,Coquimbo,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,4310,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,4,04,Coquimbo,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,4380,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,4,04,Coquimbo,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,4253,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,5,05,Valparaíso,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,7765,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,5,05,Valparaíso,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,7940,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,5,05,Valparaíso,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,7697,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,13,13,Metropolitana,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,23249,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,13,13,Metropolitana,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,23683,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,13,13,Metropolitana,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,22862,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,6,06,O'Higgins,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,5448,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,6,06,O'Higgins,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,5596,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,6,06,O'Higgins,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,5431,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,7,07,Maule,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,5820,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,7,07,Maule,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,6022,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,7,07,Maule,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,5763,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,16,16,Ñuble,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,2733,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,16,16,Ñuble,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,2842,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,16,16,Ñuble,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,2767,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,8,08,Biobío,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,9781,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,8,08,Biobío,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,9952,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,8,08,Biobío,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,9655,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,9,09,La Araucanía,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,4788,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,9,09,La Araucanía,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,4896,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,9,09,La Araucanía,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,4777,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,14,14,Los Ríos,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,1767,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,14,14,Los Ríos,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,1821,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,14,14,Los Ríos,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,1766,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,10,10,Los Lagos,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,4092,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,10,10,Los Lagos,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,4139,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,10,10,Los Lagos,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,4045,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,11,11,Aysén,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,742,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,11,11,Aysén,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,751,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,11,11,Aysén,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,691,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,12,12,Magallanes,2026-01-01,cotiza_afp_12m,Total,NA,NA,NA,761,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,12,12,Magallanes,2026-02-01,cotiza_afp_12m,Total,NA,NA,NA,762,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Regional,12,12,Magallanes,2026-03-01,cotiza_afp_12m,Total,NA,NA,NA,730,Número de personas cuidadoras con al menos una cotización de AFP en los últimos 12 meses región
+Nacional,NA,NA,Nacional,2026-01-01,recibe_pension,Total,NA,NA,NA,74395,Número de personas cuidadoras que reciben alguna pensión
+Nacional,NA,NA,Nacional,2026-02-01,recibe_pension,Total,NA,NA,NA,75908,Número de personas cuidadoras que reciben alguna pensión
+Nacional,NA,NA,Nacional,2026-03-01,recibe_pension,Total,NA,NA,NA,77681,Número de personas cuidadoras que reciben alguna pensión
+Regional,15,15,Arica y Parinacota,2026-01-01,recibe_pension,Total,NA,NA,NA,885,Número de personas cuidadoras que reciben alguna pensión región
+Regional,15,15,Arica y Parinacota,2026-02-01,recibe_pension,Total,NA,NA,NA,893,Número de personas cuidadoras que reciben alguna pensión región
+Regional,15,15,Arica y Parinacota,2026-03-01,recibe_pension,Total,NA,NA,NA,911,Número de personas cuidadoras que reciben alguna pensión región
+Regional,1,01,Tarapacá,2026-01-01,recibe_pension,Total,NA,NA,NA,959,Número de personas cuidadoras que reciben alguna pensión región
+Regional,1,01,Tarapacá,2026-02-01,recibe_pension,Total,NA,NA,NA,993,Número de personas cuidadoras que reciben alguna pensión región
+Regional,1,01,Tarapacá,2026-03-01,recibe_pension,Total,NA,NA,NA,1030,Número de personas cuidadoras que reciben alguna pensión región
+Regional,2,02,Antofagasta,2026-01-01,recibe_pension,Total,NA,NA,NA,1481,Número de personas cuidadoras que reciben alguna pensión región
+Regional,2,02,Antofagasta,2026-02-01,recibe_pension,Total,NA,NA,NA,1498,Número de personas cuidadoras que reciben alguna pensión región
+Regional,2,02,Antofagasta,2026-03-01,recibe_pension,Total,NA,NA,NA,1523,Número de personas cuidadoras que reciben alguna pensión región
+Regional,3,03,Atacama,2026-01-01,recibe_pension,Total,NA,NA,NA,1133,Número de personas cuidadoras que reciben alguna pensión región
+Regional,3,03,Atacama,2026-02-01,recibe_pension,Total,NA,NA,NA,1163,Número de personas cuidadoras que reciben alguna pensión región
+Regional,3,03,Atacama,2026-03-01,recibe_pension,Total,NA,NA,NA,1203,Número de personas cuidadoras que reciben alguna pensión región
+Regional,4,04,Coquimbo,2026-01-01,recibe_pension,Total,NA,NA,NA,4004,Número de personas cuidadoras que reciben alguna pensión región
+Regional,4,04,Coquimbo,2026-02-01,recibe_pension,Total,NA,NA,NA,4074,Número de personas cuidadoras que reciben alguna pensión región
+Regional,4,04,Coquimbo,2026-03-01,recibe_pension,Total,NA,NA,NA,4208,Número de personas cuidadoras que reciben alguna pensión región
+Regional,5,05,Valparaíso,2026-01-01,recibe_pension,Total,NA,NA,NA,8142,Número de personas cuidadoras que reciben alguna pensión región
+Regional,5,05,Valparaíso,2026-02-01,recibe_pension,Total,NA,NA,NA,8406,Número de personas cuidadoras que reciben alguna pensión región
+Regional,5,05,Valparaíso,2026-03-01,recibe_pension,Total,NA,NA,NA,8606,Número de personas cuidadoras que reciben alguna pensión región
+Regional,13,13,Metropolitana,2026-01-01,recibe_pension,Total,NA,NA,NA,23441,Número de personas cuidadoras que reciben alguna pensión región
+Regional,13,13,Metropolitana,2026-02-01,recibe_pension,Total,NA,NA,NA,23852,Número de personas cuidadoras que reciben alguna pensión región
+Regional,13,13,Metropolitana,2026-03-01,recibe_pension,Total,NA,NA,NA,24346,Número de personas cuidadoras que reciben alguna pensión región
+Regional,6,06,O'Higgins,2026-01-01,recibe_pension,Total,NA,NA,NA,4860,Número de personas cuidadoras que reciben alguna pensión región
+Regional,6,06,O'Higgins,2026-02-01,recibe_pension,Total,NA,NA,NA,4930,Número de personas cuidadoras que reciben alguna pensión región
+Regional,6,06,O'Higgins,2026-03-01,recibe_pension,Total,NA,NA,NA,5086,Número de personas cuidadoras que reciben alguna pensión región
+Regional,7,07,Maule,2026-01-01,recibe_pension,Total,NA,NA,NA,5170,Número de personas cuidadoras que reciben alguna pensión región
+Regional,7,07,Maule,2026-02-01,recibe_pension,Total,NA,NA,NA,5276,Número de personas cuidadoras que reciben alguna pensión región
+Regional,7,07,Maule,2026-03-01,recibe_pension,Total,NA,NA,NA,5411,Número de personas cuidadoras que reciben alguna pensión región
+Regional,16,16,Ñuble,2026-01-01,recibe_pension,Total,NA,NA,NA,2927,Número de personas cuidadoras que reciben alguna pensión región
+Regional,16,16,Ñuble,2026-02-01,recibe_pension,Total,NA,NA,NA,3011,Número de personas cuidadoras que reciben alguna pensión región
+Regional,16,16,Ñuble,2026-03-01,recibe_pension,Total,NA,NA,NA,3100,Número de personas cuidadoras que reciben alguna pensión región
+Regional,8,08,Biobío,2026-01-01,recibe_pension,Total,NA,NA,NA,9045,Número de personas cuidadoras que reciben alguna pensión región
+Regional,8,08,Biobío,2026-02-01,recibe_pension,Total,NA,NA,NA,9171,Número de personas cuidadoras que reciben alguna pensión región
+Regional,8,08,Biobío,2026-03-01,recibe_pension,Total,NA,NA,NA,9298,Número de personas cuidadoras que reciben alguna pensión región
+Regional,9,09,La Araucanía,2026-01-01,recibe_pension,Total,NA,NA,NA,5402,Número de personas cuidadoras que reciben alguna pensión región
+Regional,9,09,La Araucanía,2026-02-01,recibe_pension,Total,NA,NA,NA,5532,Número de personas cuidadoras que reciben alguna pensión región
+Regional,9,09,La Araucanía,2026-03-01,recibe_pension,Total,NA,NA,NA,5661,Número de personas cuidadoras que reciben alguna pensión región
+Regional,14,14,Los Ríos,2026-01-01,recibe_pension,Total,NA,NA,NA,1903,Número de personas cuidadoras que reciben alguna pensión región
+Regional,14,14,Los Ríos,2026-02-01,recibe_pension,Total,NA,NA,NA,1971,Número de personas cuidadoras que reciben alguna pensión región
+Regional,14,14,Los Ríos,2026-03-01,recibe_pension,Total,NA,NA,NA,2031,Número de personas cuidadoras que reciben alguna pensión región
+Regional,10,10,Los Lagos,2026-01-01,recibe_pension,Total,NA,NA,NA,3971,Número de personas cuidadoras que reciben alguna pensión región
+Regional,10,10,Los Lagos,2026-02-01,recibe_pension,Total,NA,NA,NA,4057,Número de personas cuidadoras que reciben alguna pensión región
+Regional,10,10,Los Lagos,2026-03-01,recibe_pension,Total,NA,NA,NA,4169,Número de personas cuidadoras que reciben alguna pensión región
+Regional,11,11,Aysén,2026-01-01,recibe_pension,Total,NA,NA,NA,481,Número de personas cuidadoras que reciben alguna pensión región
+Regional,11,11,Aysén,2026-02-01,recibe_pension,Total,NA,NA,NA,491,Número de personas cuidadoras que reciben alguna pensión región
+Regional,11,11,Aysén,2026-03-01,recibe_pension,Total,NA,NA,NA,501,Número de personas cuidadoras que reciben alguna pensión región
+Regional,12,12,Magallanes,2026-01-01,recibe_pension,Total,NA,NA,NA,591,Número de personas cuidadoras que reciben alguna pensión región
+Regional,12,12,Magallanes,2026-02-01,recibe_pension,Total,NA,NA,NA,590,Número de personas cuidadoras que reciben alguna pensión región
+Regional,12,12,Magallanes,2026-03-01,recibe_pension,Total,NA,NA,NA,597,Número de personas cuidadoras que reciben alguna pensión región
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,NA,NA,NA,1328833,Número de personas que requieren cuidados
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,NA,NA,NA,1332458,Número de personas que requieren cuidados
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,NA,NA,NA,1343007,Número de personas que requieren cuidados
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Mujer,NA,NA,NA,637268,Número de personas que requieren cuidados mujeres
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Mujer,NA,NA,NA,639365,Número de personas que requieren cuidados mujeres
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Mujer,NA,NA,NA,644493,Número de personas que requieren cuidados mujeres
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Hombre,NA,NA,NA,691565,Número de personas que requieren cuidados hombres
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Hombre,NA,NA,NA,693093,Número de personas que requieren cuidados hombres
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Hombre,NA,NA,NA,698514,Número de personas que requieren cuidados hombres
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,0-5 años,NA,NA,35304,Número de personas que requieren cuidados 0-5 años
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,0-5 años,NA,NA,34331,Número de personas que requieren cuidados 0-5 años
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,0-5 años,NA,NA,33672,Número de personas que requieren cuidados 0-5 años
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,6-17 años,NA,NA,271454,Número de personas que requieren cuidados 6-17 años
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,6-17 años,NA,NA,271202,Número de personas que requieren cuidados 6-17 años
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,6-17 años,NA,NA,271202,Número de personas que requieren cuidados 6-17 años
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,18-29 años,NA,NA,206852,Número de personas que requieren cuidados 18-29 años
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,18-29 años,NA,NA,208229,Número de personas que requieren cuidados 18-29 años
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,18-29 años,NA,NA,209635,Número de personas que requieren cuidados 18-29 años
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,30-44 años,NA,NA,126124,Número de personas que requieren cuidados 30-44 años
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,30-44 años,NA,NA,126971,Número de personas que requieren cuidados 30-44 años
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,30-44 años,NA,NA,128320,Número de personas que requieren cuidados 30-44 años
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,45-59 años,NA,NA,198622,Número de personas que requieren cuidados 45-59 años
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,45-59 años,NA,NA,198827,Número de personas que requieren cuidados 45-59 años
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,45-59 años,NA,NA,200885,Número de personas que requieren cuidados 45-59 años
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,60 años o más,NA,NA,490477,Número de personas que requieren cuidados 60 años o más
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,60 años o más,NA,NA,492898,Número de personas que requieren cuidados 60 años o más
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,60 años o más,NA,NA,499293,Número de personas que requieren cuidados 60 años o más
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,NA,0-40%,NA,1001134,Número de personas que requieren cuidados Tramo CSE 0-40%
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,NA,0-40%,NA,1003676,Número de personas que requieren cuidados Tramo CSE 0-40%
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,NA,0-40%,NA,1031486,Número de personas que requieren cuidados Tramo CSE 0-40%
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,NA,41-60%,NA,167363,Número de personas que requieren cuidados Tramo CSE 41-60%
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,NA,41-60%,NA,167878,Número de personas que requieren cuidados Tramo CSE 41-60%
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,NA,41-60%,NA,159723,Número de personas que requieren cuidados Tramo CSE 41-60%
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,NA,61-80%,NA,97194,Número de personas que requieren cuidados Tramo CSE 61-80%
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,NA,61-80%,NA,97192,Número de personas que requieren cuidados Tramo CSE 61-80%
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,NA,61-80%,NA,91264,Número de personas que requieren cuidados Tramo CSE 61-80%
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados,Total,NA,81-100%,NA,63142,Número de personas que requieren cuidados Tramo CSE 81-100%
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados,Total,NA,81-100%,NA,63712,Número de personas que requieren cuidados Tramo CSE 81-100%
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados,Total,NA,81-100%,NA,60534,Número de personas que requieren cuidados Tramo CSE 81-100%
+Regional,15,15,Arica y Parinacota,2026-01-01,req_cuidados,Total,NA,NA,NA,17045,Número de personas que requieren cuidados en la región
+Regional,15,15,Arica y Parinacota,2026-02-01,req_cuidados,Total,NA,NA,NA,17144,Número de personas que requieren cuidados en la región
+Regional,15,15,Arica y Parinacota,2026-03-01,req_cuidados,Total,NA,NA,NA,17239,Número de personas que requieren cuidados en la región
+Regional,1,01,Tarapacá,2026-01-01,req_cuidados,Total,NA,NA,NA,21255,Número de personas que requieren cuidados en la región
+Regional,1,01,Tarapacá,2026-02-01,req_cuidados,Total,NA,NA,NA,21388,Número de personas que requieren cuidados en la región
+Regional,1,01,Tarapacá,2026-03-01,req_cuidados,Total,NA,NA,NA,21604,Número de personas que requieren cuidados en la región
+Regional,2,02,Antofagasta,2026-01-01,req_cuidados,Total,NA,NA,NA,34100,Número de personas que requieren cuidados en la región
+Regional,2,02,Antofagasta,2026-02-01,req_cuidados,Total,NA,NA,NA,34194,Número de personas que requieren cuidados en la región
+Regional,2,02,Antofagasta,2026-03-01,req_cuidados,Total,NA,NA,NA,34409,Número de personas que requieren cuidados en la región
+Regional,3,03,Atacama,2026-01-01,req_cuidados,Total,NA,NA,NA,22250,Número de personas que requieren cuidados en la región
+Regional,3,03,Atacama,2026-02-01,req_cuidados,Total,NA,NA,NA,22332,Número de personas que requieren cuidados en la región
+Regional,3,03,Atacama,2026-03-01,req_cuidados,Total,NA,NA,NA,22470,Número de personas que requieren cuidados en la región
+Regional,4,04,Coquimbo,2026-01-01,req_cuidados,Total,NA,NA,NA,63908,Número de personas que requieren cuidados en la región
+Regional,4,04,Coquimbo,2026-02-01,req_cuidados,Total,NA,NA,NA,64206,Número de personas que requieren cuidados en la región
+Regional,4,04,Coquimbo,2026-03-01,req_cuidados,Total,NA,NA,NA,64691,Número de personas que requieren cuidados en la región
+Regional,5,05,Valparaíso,2026-01-01,req_cuidados,Total,NA,NA,NA,143703,Número de personas que requieren cuidados en la región
+Regional,5,05,Valparaíso,2026-02-01,req_cuidados,Total,NA,NA,NA,144175,Número de personas que requieren cuidados en la región
+Regional,5,05,Valparaíso,2026-03-01,req_cuidados,Total,NA,NA,NA,145330,Número de personas que requieren cuidados en la región
+Regional,13,13,Metropolitana,2026-01-01,req_cuidados,Total,NA,NA,NA,383742,Número de personas que requieren cuidados en la región
+Regional,13,13,Metropolitana,2026-02-01,req_cuidados,Total,NA,NA,NA,384375,Número de personas que requieren cuidados en la región
+Regional,13,13,Metropolitana,2026-03-01,req_cuidados,Total,NA,NA,NA,388886,Número de personas que requieren cuidados en la región
+Regional,6,06,O'Higgins,2026-01-01,req_cuidados,Total,NA,NA,NA,84323,Número de personas que requieren cuidados en la región
+Regional,6,06,O'Higgins,2026-02-01,req_cuidados,Total,NA,NA,NA,84567,Número de personas que requieren cuidados en la región
+Regional,6,06,O'Higgins,2026-03-01,req_cuidados,Total,NA,NA,NA,85018,Número de personas que requieren cuidados en la región
+Regional,7,07,Maule,2026-01-01,req_cuidados,Total,NA,NA,NA,94920,Número de personas que requieren cuidados en la región
+Regional,7,07,Maule,2026-02-01,req_cuidados,Total,NA,NA,NA,95285,Número de personas que requieren cuidados en la región
+Regional,7,07,Maule,2026-03-01,req_cuidados,Total,NA,NA,NA,95949,Número de personas que requieren cuidados en la región
+Regional,16,16,Ñuble,2026-01-01,req_cuidados,Total,NA,NA,NA,62848,Número de personas que requieren cuidados en la región
+Regional,16,16,Ñuble,2026-02-01,req_cuidados,Total,NA,NA,NA,62965,Número de personas que requieren cuidados en la región
+Regional,16,16,Ñuble,2026-03-01,req_cuidados,Total,NA,NA,NA,63378,Número de personas que requieren cuidados en la región
+Regional,8,08,Biobío,2026-01-01,req_cuidados,Total,NA,NA,NA,169267,Número de personas que requieren cuidados en la región
+Regional,8,08,Biobío,2026-02-01,req_cuidados,Total,NA,NA,NA,169545,Número de personas que requieren cuidados en la región
+Regional,8,08,Biobío,2026-03-01,req_cuidados,Total,NA,NA,NA,170511,Número de personas que requieren cuidados en la región
+Regional,9,09,La Araucanía,2026-01-01,req_cuidados,Total,NA,NA,NA,96640,Número de personas que requieren cuidados en la región
+Regional,9,09,La Araucanía,2026-02-01,req_cuidados,Total,NA,NA,NA,97008,Número de personas que requieren cuidados en la región
+Regional,9,09,La Araucanía,2026-03-01,req_cuidados,Total,NA,NA,NA,97459,Número de personas que requieren cuidados en la región
+Regional,14,14,Los Ríos,2026-01-01,req_cuidados,Total,NA,NA,NA,35517,Número de personas que requieren cuidados en la región
+Regional,14,14,Los Ríos,2026-02-01,req_cuidados,Total,NA,NA,NA,35785,Número de personas que requieren cuidados en la región
+Regional,14,14,Los Ríos,2026-03-01,req_cuidados,Total,NA,NA,NA,36101,Número de personas que requieren cuidados en la región
+Regional,10,10,Los Lagos,2026-01-01,req_cuidados,Total,NA,NA,NA,76936,Número de personas que requieren cuidados en la región
+Regional,10,10,Los Lagos,2026-02-01,req_cuidados,Total,NA,NA,NA,77065,Número de personas que requieren cuidados en la región
+Regional,10,10,Los Lagos,2026-03-01,req_cuidados,Total,NA,NA,NA,77438,Número de personas que requieren cuidados en la región
+Regional,11,11,Aysén,2026-01-01,req_cuidados,Total,NA,NA,NA,10400,Número de personas que requieren cuidados en la región
+Regional,11,11,Aysén,2026-02-01,req_cuidados,Total,NA,NA,NA,10427,Número de personas que requieren cuidados en la región
+Regional,11,11,Aysén,2026-03-01,req_cuidados,Total,NA,NA,NA,10479,Número de personas que requieren cuidados en la región
+Regional,12,12,Magallanes,2026-01-01,req_cuidados,Total,NA,NA,NA,11979,Número de personas que requieren cuidados en la región
+Regional,12,12,Magallanes,2026-02-01,req_cuidados,Total,NA,NA,NA,11997,Número de personas que requieren cuidados en la región
+Regional,12,12,Magallanes,2026-03-01,req_cuidados,Total,NA,NA,NA,12045,Número de personas que requieren cuidados en la región
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,247939,Número de personas que requieren cuidados que tienen al menos un cuidador
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,252101,Número de personas que requieren cuidados que tienen al menos un cuidador
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,256514,Número de personas que requieren cuidados que tienen al menos un cuidador
+Regional,15,15,Arica y Parinacota,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,3277,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,15,15,Arica y Parinacota,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,3328,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,15,15,Arica y Parinacota,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,3394,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,1,01,Tarapacá,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,4258,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,1,01,Tarapacá,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,4389,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,1,01,Tarapacá,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,4526,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,2,02,Antofagasta,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,6163,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,2,02,Antofagasta,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,6265,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,2,02,Antofagasta,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,6335,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,3,03,Atacama,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,4281,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,3,03,Atacama,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,4382,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,3,03,Atacama,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,4492,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,4,04,Coquimbo,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,14259,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,4,04,Coquimbo,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,14512,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,4,04,Coquimbo,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,14835,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,5,05,Valparaíso,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,25872,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,5,05,Valparaíso,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,26482,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,5,05,Valparaíso,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,26981,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,13,13,Metropolitana,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,74627,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,13,13,Metropolitana,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,75776,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,13,13,Metropolitana,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,77040,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,6,06,O'Higgins,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,15754,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,6,06,O'Higgins,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,15955,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,6,06,O'Higgins,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,16308,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,7,07,Maule,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,17953,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,7,07,Maule,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,18269,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,7,07,Maule,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,18598,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,16,16,Ñuble,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,10042,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,16,16,Ñuble,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,10226,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,16,16,Ñuble,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,10429,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,8,08,Biobío,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,30475,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,8,08,Biobío,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,30862,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,8,08,Biobío,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,31195,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,9,09,La Araucanía,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,17834,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,9,09,La Araucanía,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,18152,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,9,09,La Araucanía,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,18459,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,14,14,Los Ríos,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,6190,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,14,14,Los Ríos,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,6354,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,14,14,Los Ríos,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,6503,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,10,10,Los Lagos,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,13225,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,10,10,Los Lagos,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,13396,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,10,10,Los Lagos,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,13615,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,11,11,Aysén,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,1844,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,11,11,Aysén,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,1858,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,11,11,Aysén,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,1882,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,12,12,Magallanes,2026-01-01,req_cuidados_con_cuidador,Total,NA,NA,NA,1885,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,12,12,Magallanes,2026-02-01,req_cuidados_con_cuidador,Total,NA,NA,NA,1895,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Regional,12,12,Magallanes,2026-03-01,req_cuidados_con_cuidador,Total,NA,NA,NA,1922,Número de personas que requieren cuidados que tienen al menos un cuidador de la región
+Nacional,NA,NA,Nacional,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,1080894,Número de personas que requieren cuidados sin cuidador
+Nacional,NA,NA,Nacional,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,1080357,Número de personas que requieren cuidados sin cuidador
+Nacional,NA,NA,Nacional,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,1086493,Número de personas que requieren cuidados sin cuidador
+Regional,15,15,Arica y Parinacota,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,13768,Número de personas que requieren cuidados sin cuidador de la región
+Regional,15,15,Arica y Parinacota,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,13816,Número de personas que requieren cuidados sin cuidador de la región
+Regional,15,15,Arica y Parinacota,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,13845,Número de personas que requieren cuidados sin cuidador de la región
+Regional,1,01,Tarapacá,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,16997,Número de personas que requieren cuidados sin cuidador de la región
+Regional,1,01,Tarapacá,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,16999,Número de personas que requieren cuidados sin cuidador de la región
+Regional,1,01,Tarapacá,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,17078,Número de personas que requieren cuidados sin cuidador de la región
+Regional,2,02,Antofagasta,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,27937,Número de personas que requieren cuidados sin cuidador de la región
+Regional,2,02,Antofagasta,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,27929,Número de personas que requieren cuidados sin cuidador de la región
+Regional,2,02,Antofagasta,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,28074,Número de personas que requieren cuidados sin cuidador de la región
+Regional,3,03,Atacama,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,17969,Número de personas que requieren cuidados sin cuidador de la región
+Regional,3,03,Atacama,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,17950,Número de personas que requieren cuidados sin cuidador de la región
+Regional,3,03,Atacama,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,17978,Número de personas que requieren cuidados sin cuidador de la región
+Regional,4,04,Coquimbo,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,49649,Número de personas que requieren cuidados sin cuidador de la región
+Regional,4,04,Coquimbo,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,49694,Número de personas que requieren cuidados sin cuidador de la región
+Regional,4,04,Coquimbo,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,49856,Número de personas que requieren cuidados sin cuidador de la región
+Regional,5,05,Valparaíso,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,117831,Número de personas que requieren cuidados sin cuidador de la región
+Regional,5,05,Valparaíso,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,117693,Número de personas que requieren cuidados sin cuidador de la región
+Regional,5,05,Valparaíso,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,118349,Número de personas que requieren cuidados sin cuidador de la región
+Regional,13,13,Metropolitana,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,309115,Número de personas que requieren cuidados sin cuidador de la región
+Regional,13,13,Metropolitana,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,308599,Número de personas que requieren cuidados sin cuidador de la región
+Regional,13,13,Metropolitana,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,311846,Número de personas que requieren cuidados sin cuidador de la región
+Regional,6,06,O'Higgins,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,68569,Número de personas que requieren cuidados sin cuidador de la región
+Regional,6,06,O'Higgins,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,68612,Número de personas que requieren cuidados sin cuidador de la región
+Regional,6,06,O'Higgins,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,68710,Número de personas que requieren cuidados sin cuidador de la región
+Regional,7,07,Maule,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,76967,Número de personas que requieren cuidados sin cuidador de la región
+Regional,7,07,Maule,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,77016,Número de personas que requieren cuidados sin cuidador de la región
+Regional,7,07,Maule,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,77351,Número de personas que requieren cuidados sin cuidador de la región
+Regional,16,16,Ñuble,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,52806,Número de personas que requieren cuidados sin cuidador de la región
+Regional,16,16,Ñuble,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,52739,Número de personas que requieren cuidados sin cuidador de la región
+Regional,16,16,Ñuble,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,52949,Número de personas que requieren cuidados sin cuidador de la región
+Regional,8,08,Biobío,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,138792,Número de personas que requieren cuidados sin cuidador de la región
+Regional,8,08,Biobío,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,138683,Número de personas que requieren cuidados sin cuidador de la región
+Regional,8,08,Biobío,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,139316,Número de personas que requieren cuidados sin cuidador de la región
+Regional,9,09,La Araucanía,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,78806,Número de personas que requieren cuidados sin cuidador de la región
+Regional,9,09,La Araucanía,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,78856,Número de personas que requieren cuidados sin cuidador de la región
+Regional,9,09,La Araucanía,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,79000,Número de personas que requieren cuidados sin cuidador de la región
+Regional,14,14,Los Ríos,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,29327,Número de personas que requieren cuidados sin cuidador de la región
+Regional,14,14,Los Ríos,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,29431,Número de personas que requieren cuidados sin cuidador de la región
+Regional,14,14,Los Ríos,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,29598,Número de personas que requieren cuidados sin cuidador de la región
+Regional,10,10,Los Lagos,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,63711,Número de personas que requieren cuidados sin cuidador de la región
+Regional,10,10,Los Lagos,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,63669,Número de personas que requieren cuidados sin cuidador de la región
+Regional,10,10,Los Lagos,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,63823,Número de personas que requieren cuidados sin cuidador de la región
+Regional,11,11,Aysén,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,8556,Número de personas que requieren cuidados sin cuidador de la región
+Regional,11,11,Aysén,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,8569,Número de personas que requieren cuidados sin cuidador de la región
+Regional,11,11,Aysén,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,8597,Número de personas que requieren cuidados sin cuidador de la región
+Regional,12,12,Magallanes,2026-01-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,10094,Número de personas que requieren cuidados sin cuidador de la región
+Regional,12,12,Magallanes,2026-02-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,10102,Número de personas que requieren cuidados sin cuidador de la región
+Regional,12,12,Magallanes,2026-03-01,req_cuidados_sin_cuidador,Total,NA,NA,NA,10123,Número de personas que requieren cuidados sin cuidador de la región

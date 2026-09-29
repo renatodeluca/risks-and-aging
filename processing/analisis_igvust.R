@@ -8,12 +8,12 @@ library(sf)
 library(patchwork)
 library(tidyverse)
 
-# ---- Cargar datos ----
+# - cargar datos
 
 datos <- read_excel("../input/data-orig/igvust.xlsx") %>%
   limpiar_regiones(Region)
 
-# ---- Vulnerabilidad por región ----
+# vulnerabilidad por region
 
 regiones_vulnerabilidad <- datos %>%
   group_by(Region, cod_reg) %>%

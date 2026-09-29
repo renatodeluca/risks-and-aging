@@ -1,6 +1,6 @@
 ---
 title: "Vulnerabilidad Socioterritorial en Chile"
-subtitle: "Análisis del Índice de Geografía de la Vulnerabilidad Urbana y Social Territorial (IGVUST)"
+subtitle: "Análisis de múltipes datos. Indice Global de Vulnerabilidad Socioterritorial, cuidados, envejecimiento y riesgos."
 authors:
   - name: Renato De Luca
     affiliation: Universidad de Chile
@@ -119,6 +119,10 @@ regiones_vulnerabilidad %>%
 
 La variable de cobertura comunal del Registro Social de Hogares (`p_cobertura_com`) supera el 100% en 101 de las 346 comunas del país (29%), principalmente en comunas rurales o de baja población, lo que sugiere un desajuste entre la población de referencia utilizada y el número de personas efectivamente registradas. Esto no afecta directamente el cálculo oficial del IGVUST, pero sí limita la confiabilidad de esta variable como indicador de representatividad para algunas comunas. Cabe destacar el caso de Constitución (Maule), clasificada en el cuartil más vulnerable, cuya cobertura del RSH es de solo 48,5%, por lo que su resultado debe interpretarse con cautela.
 :::
+
+
+
+
 
 ---
 
