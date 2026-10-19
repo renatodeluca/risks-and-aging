@@ -34,6 +34,15 @@ source("../processing/analisis_bpc.r")
 
 # Análisis IGVUST
 
+::: {.callout-note}
+## App interactiva
+
+Explora los datos con selectores de variable, región y comuna en la app Shiny
+(desplegada en shinyapps.io):
+
+<https://renatodeluca.shinyapps.io/risks-and-aging/>
+:::
+
 ## ¿Cómo se construye el IGVUST?
 
 
